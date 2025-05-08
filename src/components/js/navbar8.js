@@ -1,8 +1,7 @@
 import React, { useState, Fragment } from 'react'
-
 import PropTypes from 'prop-types'
-
-import './navbar8.css'
+import { Link } from 'react-router-dom'
+import '../css/navbar8.css'
 
 const Navbar8 = (props) => {
   const [link5AccordionOpen, setLink5AccordionOpen] = useState(false)
@@ -17,44 +16,42 @@ const Navbar8 = (props) => {
         />
         <div data-thq="thq-navbar-nav" className="navbar8-desktop-menu">
           <nav className="navbar8-links1">
-            <a
-              href={props.link1Url}
+            <Link
+              to={props.trangChuUrl}
               className="navbar8-link11 thq-link thq-body-small"
             >
-              {props.link1 ?? (
+              {props.trangChu ?? (
                 <Fragment>
-                  <span className="navbar8-text18">index.html</span>
+                  <span className="navbar8-text18">Trang chủ</span>
                 </Fragment>
               )}
-            </a>
-            <a href={props.link2Url} className="thq-link thq-body-small">
-              {props.link2 ?? (
+            </Link>
+            <Link to={props.tinTucUrl} className="thq-link thq-body-small">
+              {props.tinTuc ?? (
                 <Fragment>
-                  <span className="navbar8-text16">login.html</span>
+                  <span className="navbar8-text16">Tin tức</span>
                 </Fragment>
               )}
-            </a>
-            <a
-              href={props.link3Url}
-              target="_blank"
-              rel="noreferrer noopener"
+            </Link>
+            <Link
+              to={props.gioiThieuUrl}
               className="navbar8-link31 thq-link thq-body-small"
             >
-              {props.link3 ?? (
+              {props.gioiThieu ?? (
                 <Fragment>
-                  <span className="navbar8-text24">doctor-list.html</span>
+                  <span className="navbar8-text24">Giới thiệu</span>
                 </Fragment>
               )}
-            </a>
+            </Link>
             <div
               onClick={() => setLink5DropdownVisible(!link5DropdownVisible)}
               className="navbar8-link4-dropdown-trigger"
             >
               <span className="thq-link thq-body-small">
-                {props.link4 ?? (
+                {props.them ?? (
                   <Fragment>
                     <span className="navbar8-text21">
-                      appointment-management.html
+                      Thêm
                     </span>
                   </Fragment>
                 )}
@@ -80,18 +77,18 @@ const Navbar8 = (props) => {
           <div className="navbar8-buttons1">
             <button className="navbar8-action11 thq-button-animated thq-button-filled">
               <span>
-                {props.action1 ?? (
+                {props.nguoiDung ?? (
                   <Fragment>
-                    <span className="navbar8-text15">Main Action</span>
+                    <span className="navbar8-text15">Người dùng</span>
                   </Fragment>
                 )}
               </span>
             </button>
             <button className="navbar8-action21 thq-button-outline thq-button-animated">
               <span>
-                {props.action2 ?? (
+                {props.dangNhapDangKy ?? (
                   <Fragment>
-                    <span className="navbar8-text27">Secondary Action</span>
+                    <span className="navbar8-text27">Đăng nhập/Đăng ký</span>
                   </Fragment>
                 )}
               </span>
@@ -118,43 +115,43 @@ const Navbar8 = (props) => {
               </div>
             </div>
             <nav className="navbar8-links2">
-              <a
-                href={props.link1Url}
+              <Link
+                to={props.trangChuUrl}
                 className="navbar8-link12 thq-link thq-body-small"
               >
-                {props.link1 ?? (
+                {props.trangChu ?? (
                   <Fragment>
-                    <span className="navbar8-text18">index.html</span>
+                    <span className="navbar8-text18">Trang chủ</span>
                   </Fragment>
                 )}
-              </a>
-              <a href={props.link2Url} className="thq-link thq-body-small">
-                {props.link2 ?? (
+              </Link>
+              <Link to={props.tinTucUrl} className="thq-link thq-body-small">
+                {props.tinTuc ?? (
                   <Fragment>
-                    <span className="navbar8-text16">login.html</span>
+                    <span className="navbar8-text16">Tin tức</span>
                   </Fragment>
                 )}
-              </a>
-              <a
-                href={props.link3Url}
+              </Link>
+              <Link
+                to={props.gioiThieuUrl}
                 className="navbar8-link32 thq-link thq-body-small"
               >
-                {props.link3 ?? (
+                {props.gioiThieu ?? (
                   <Fragment>
-                    <span className="navbar8-text24">doctor-list.html</span>
+                    <span className="navbar8-text24">Giới thiệu</span>
                   </Fragment>
                 )}
-              </a>
+              </Link>
               <div className="navbar8-link4-accordion">
                 <div
                   onClick={() => setLink5AccordionOpen(!link5AccordionOpen)}
                   className="navbar8-trigger"
                 >
                   <span className="thq-link thq-body-small">
-                    {props.link4 ?? (
+                    {props.them ?? (
                       <Fragment>
                         <span className="navbar8-text21">
-                          appointment-management.html
+                          Thêm
                         </span>
                       </Fragment>
                     )}
@@ -178,74 +175,74 @@ const Navbar8 = (props) => {
                 </div>
                 {link5AccordionOpen && (
                   <div className="navbar8-container6">
-                    <a href={props.linkUrlPage1}>
+                    <Link to={props.lienKetThanhToan}>
                       <div className="navbar8-menu-item1">
                         <img
-                          alt={props.page1ImageAlt}
-                          src={props.page1ImageSrc}
+                          alt={props.hinhAnhThanhToanAlt}
+                          src={props.hinhAnhThanhToanSrc}
                           className="navbar8-page1-image1"
                         />
                         <div className="navbar8-content1">
                           <span className="navbar8-page11 thq-body-large">
-                            {props.page1 ?? (
+                            {props.tieuDeThanhToan ?? (
                               <Fragment>
                                 <span className="navbar8-text17">
-                                  Trang chủ
+                                  Thanh toán
                                 </span>
                               </Fragment>
                             )}
                           </span>
                           <span className="thq-body-small">
-                            {props.page1Description ?? (
+                            {props.moTaThanhToan ?? (
                               <Fragment>
                                 <span className="navbar8-text22">
-                                  Page One Description
+                                  Thanh toán trước tiền hẹn khám
                                 </span>
                               </Fragment>
                             )}
                           </span>
                         </div>
                       </div>
-                    </a>
-                    <a href={props.linkUrlPage2}>
+                    </Link>
+                    <Link to={props.lienKetDatLich}>
                       <div className="navbar8-menu-item2">
                         <img
-                          alt={props.page2ImageAlt}
-                          src={props.page2ImageSrc}
+                          alt={props.hinhAnhDatLichAlt}
+                          src={props.hinhAnhDatLichSrc}
                           className="navbar8-page2-image1"
                         />
                         <div className="navbar8-content2">
                           <span className="navbar8-page21 thq-body-large">
-                            {props.page2 ?? (
+                            {props.tieuDeDatLich ?? (
                               <Fragment>
                                 <span className="navbar8-text20">
-                                  Đăng nhập/Đăng ký
+                                  Đặt lịch hẹn
                                 </span>
                               </Fragment>
                             )}
                           </span>
                           <span className="thq-body-small">
-                            {props.page2Description ?? (
+                            {props.moTaDatLich ?? (
                               <Fragment>
                                 <span className="navbar8-text23">
-                                  Page Two Description
+                                  Đặt lịch khám trước với bác sĩ
                                 </span>
                               </Fragment>
                             )}
                           </span>
                         </div>
                       </div>
-                    </a>
-                    <a href={props.linkUrlPage3}>
+                    </Link>
+                    <Link to={props.lienKetDanhSachBacSi}>
                       <div className="navbar8-menu-item3">
                         <img
-                          alt={props.page3ImageAlt}
-                          src={props.page3ImageSrc}
+                          alt={props.hinhAnhDanhSachBacSiAlt}
+                          src={props.hinhAnhDanhSachBacSiSrc}
                           className="navbar8-page3-image1"
                         />
                         <div className="navbar8-content3">
                           <span className="navbar8-page31 thq-body-large">
-                            {props.page3 ?? (
+                            {props.tieuDeDanhSachBacSi ?? (
                               <Fragment>
                                 <span className="navbar8-text25">
                                   Danh sách bác sĩ
@@ -254,46 +251,46 @@ const Navbar8 = (props) => {
                             )}
                           </span>
                           <span className="thq-body-small">
-                            {props.page3Description ?? (
+                            {props.moTaDanhSachBacSi ?? (
                               <Fragment>
                                 <span className="navbar8-text26">
-                                  Page Three Description
+                                  Xem danh sách bác sĩ
                                 </span>
                               </Fragment>
                             )}
                           </span>
                         </div>
                       </div>
-                    </a>
-                    <a href={props.linkUrlPage4}>
+                    </Link>
+                    <Link to={props.lienKetQuanLyLichHen}>
                       <div className="navbar8-menu-item4">
                         <img
-                          alt={props.page4ImageAlt}
-                          src={props.page4ImageSrc}
+                          alt={props.hinhAnhQuanLyLichHenAlt}
+                          src={props.hinhAnhQuanLyLichHenSrc}
                           className="navbar8-page4-image1"
                         />
                         <div className="navbar8-content4">
                           <span className="navbar8-page41 thq-body-large">
-                            {props.page4 ?? (
+                            {props.tieuDeQuanLyLichHen ?? (
                               <Fragment>
                                 <span className="navbar8-text19">
-                                  Trang quản lý lịch đã đặt
+                                  Quản lý lịch hẹn
                                 </span>
                               </Fragment>
                             )}
                           </span>
                           <span className="thq-body-small">
-                            {props.page4Description ?? (
+                            {props.moTaQuanLyLichHen ?? (
                               <Fragment>
                                 <span className="navbar8-text14">
-                                  Page Four Description
+                                  Quản lý lịch hẹn của bạn
                                 </span>
                               </Fragment>
                             )}
                           </span>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 )}
               </div>
@@ -301,18 +298,18 @@ const Navbar8 = (props) => {
             <div className="navbar8-buttons2">
               <button className="thq-button-filled">
                 <span>
-                  {props.action1 ?? (
+                  {props.nguoiDung ?? (
                     <Fragment>
-                      <span className="navbar8-text15">Main Action</span>
+                      <span className="navbar8-text15">Người dùng</span>
                     </Fragment>
                   )}
                 </span>
               </button>
               <button className="thq-button-outline">
                 <span>
-                  {props.action2 ?? (
+                  {props.dangNhapDangKy ?? (
                     <Fragment>
-                      <span className="navbar8-text27">Secondary Action</span>
+                      <span className="navbar8-text27">Đăng nhập/Đăng ký</span>
                     </Fragment>
                   )}
                 </span>
@@ -343,72 +340,74 @@ const Navbar8 = (props) => {
         {link5DropdownVisible && (
           <div className="navbar8-container7 thq-box-shadow">
             <div className="navbar8-link5-menu-list">
-              <a href={props.linkUrlPage1}>
+              <Link to={props.lienKetThanhToan}>
                 <div className="navbar8-menu-item5">
                   <img
-                    alt={props.page1ImageAlt}
-                    src={props.page1ImageSrc}
+                    alt={props.hinhAnhThanhToanAlt}
+                    src={props.hinhAnhThanhToanSrc}
                     className="navbar8-page1-image2 thq-img-ratio-1-1"
                   />
                   <div className="navbar8-content5">
                     <span className="navbar8-page12 thq-body-large">
-                      {props.page1 ?? (
+                      {props.tieuDeThanhToan ?? (
                         <Fragment>
-                          <span className="navbar8-text17">Trang chủ</span>
+                          <span className="navbar8-text17">
+                            Thanh toán
+                          </span>
                         </Fragment>
                       )}
                     </span>
                     <span className="thq-body-small">
-                      {props.page1Description ?? (
+                      {props.moTaThanhToan ?? (
                         <Fragment>
                           <span className="navbar8-text22">
-                            Page One Description
+                            Thanh toán trước tiền hẹn khám
                           </span>
                         </Fragment>
                       )}
                     </span>
                   </div>
                 </div>
-              </a>
-              <a href={props.linkUrlPage2}>
+              </Link>
+              <Link to={props.lienKetDatLich}>
                 <div className="navbar8-menu-item6">
                   <img
-                    alt={props.page2ImageAlt}
-                    src={props.page2ImageSrc}
+                    alt={props.hinhAnhDatLichAlt}
+                    src={props.hinhAnhDatLichSrc}
                     className="navbar8-page2-image2 thq-img-ratio-1-1"
                   />
                   <div className="navbar8-content6">
                     <span className="navbar8-page22 thq-body-large">
-                      {props.page2 ?? (
+                      {props.tieuDeDatLich ?? (
                         <Fragment>
                           <span className="navbar8-text20">
-                            Đăng nhập/Đăng ký
+                            Đặt lịch hẹn
                           </span>
                         </Fragment>
                       )}
                     </span>
                     <span className="thq-body-small">
-                      {props.page2Description ?? (
+                      {props.moTaDatLich ?? (
                         <Fragment>
                           <span className="navbar8-text23">
-                            Page Two Description
+                            Đặt lịch khám trước với bác sĩ
                           </span>
                         </Fragment>
                       )}
                     </span>
                   </div>
                 </div>
-              </a>
-              <a href={props.linkUrlPage3}>
+              </Link>
+              <Link to={props.lienKetDanhSachBacSi}>
                 <div className="navbar8-menu-item7">
                   <img
-                    alt={props.page3ImageAlt}
-                    src={props.page3ImageSrc}
+                    alt={props.hinhAnhDanhSachBacSiAlt}
+                    src={props.hinhAnhDanhSachBacSiSrc}
                     className="navbar8-page3-image2 thq-img-ratio-1-1"
                   />
                   <div className="navbar8-content7">
                     <span className="navbar8-page32 thq-body-large">
-                      {props.page3 ?? (
+                      {props.tieuDeDanhSachBacSi ?? (
                         <Fragment>
                           <span className="navbar8-text25">
                             Danh sách bác sĩ
@@ -417,46 +416,46 @@ const Navbar8 = (props) => {
                       )}
                     </span>
                     <span className="thq-body-small">
-                      {props.page3Description ?? (
+                      {props.moTaDanhSachBacSi ?? (
                         <Fragment>
                           <span className="navbar8-text26">
-                            Page Three Description
+                            Xem danh sách bác sĩ
                           </span>
                         </Fragment>
                       )}
                     </span>
                   </div>
                 </div>
-              </a>
-              <a href={props.linkUrlPage4}>
+              </Link>
+              <Link to={props.lienKetQuanLyLichHen}>
                 <div className="navbar8-menu-item8">
                   <img
-                    alt={props.page4ImageAlt}
-                    src={props.page4ImageSrc}
+                    alt={props.hinhAnhQuanLyLichHenAlt}
+                    src={props.hinhAnhQuanLyLichHenSrc}
                     className="navbar8-page4-image2 thq-img-ratio-1-1"
                   />
                   <div className="navbar8-content8">
                     <span className="navbar8-page42 thq-body-large">
-                      {props.page4 ?? (
+                      {props.tieuDeQuanLyLichHen ?? (
                         <Fragment>
                           <span className="navbar8-text19">
-                            Trang quản lý lịch đã đặt
+                            Quản lý lịch hẹn
                           </span>
                         </Fragment>
                       )}
                     </span>
                     <span className="thq-body-small">
-                      {props.page4Description ?? (
+                      {props.moTaQuanLyLichHen ?? (
                         <Fragment>
                           <span className="navbar8-text14">
-                            Page Four Description
+                            Quản lý lịch hẹn của bạn
                           </span>
                         </Fragment>
                       )}
                     </span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         )}
@@ -472,76 +471,96 @@ const Navbar8 = (props) => {
 }
 
 Navbar8.defaultProps = {
-  linkUrlPage4: 'https://www.teleporthq.io',
-  link2Url: 'https://www.teleporthq.io',
-  page4Description: undefined,
-  page1ImageSrc:
-    'https://images.unsplash.com/photo-1532045349218-5e783e9b5e2a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3NHw&ixlib=rb-4.0.3&q=80&w=1080',
-  action1: undefined,
-  page2ImageAlt: 'Hình ảnh cho Đăng nhập/Đăng ký',
-  link2: undefined,
-  linkUrlPage2: 'https://www.teleporthq.io',
+  // Logo properties
   logoAlt: 'Logo của trang web',
-  logoSrc:
-    'https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/84ec08e8-34e9-42c7-9445-d2806d156403/fac575ac-7a41-484f-b7ac-875042de11f8?org_if_sml=1&force_format=original',
-  page3ImageAlt: 'Hình ảnh cho Danh sách bác sĩ',
-  linkUrlPage1: 'https://www.teleporthq.io',
-  page1: undefined,
-  link1: undefined,
-  page4ImageSrc:
-    'https://images.unsplash.com/photo-1741242302244-168c45da19f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3NXw&ixlib=rb-4.0.3&q=80&w=1080',
-  linkUrlPage3: 'https://www.teleporthq.io',
-  page4: undefined,
-  page2: undefined,
-  link4: undefined,
-  page4ImageAlt: 'Hình ảnh cho Trang quản lý lịch đã đặt',
-  page1Description: undefined,
-  page2ImageSrc:
-    'https://images.unsplash.com/photo-1711335755442-aabbc8aa64f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3NXw&ixlib=rb-4.0.3&q=80&w=1080',
-  page3ImageSrc:
-    'https://images.unsplash.com/photo-1508873699372-7aeab60b44ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3NXw&ixlib=rb-4.0.3&q=80&w=1080',
-  page2Description: undefined,
-  link3: undefined,
-  page3: undefined,
-  link1Url: 'https://www.teleporthq.io',
-  page3Description: undefined,
-  page1ImageAlt: 'Hình ảnh cho Trang chủ',
-  action2: undefined,
-  link3Url: 'https://www.teleporthq.io',
-}
+  logoSrc: 'https://assets-phenikaa-website.s3.ap-southeast-1.amazonaws.com/media/assets_small/Logo_PHX_%C4%91%E1%BB%A9ng-TV_1.png',
 
+  // Navigation links
+  trangChu: undefined,
+  trangChuUrl: '/',
+  tinTuc: undefined,
+  tinTucUrl: 'https://hs.phenikaa-uni.edu.vn/vi/category/tin-tuc-su-kien',
+  gioiThieu: undefined,
+  gioiThieuUrl: 'https://phenikaamec.com/',
+  them: undefined,
+
+  // Action buttons
+  nguoiDung: undefined,
+  dangNhapDangKy: undefined,
+
+  // Page 1 properties (Thanh toan)
+  tieuDeThanhToan: undefined,
+  moTaThanhToan: undefined,
+  hinhAnhThanhToanAlt: 'Hình ảnh cho Trang chủ',
+  hinhAnhThanhToanSrc: 'https://images.unsplash.com/photo-1532045349218-5e783e9b5e2a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3NHw&ixlib=rb-4.0.3&q=80&w=1080',
+  lienKetThanhToan: '/thanh-toan',
+
+  // Page 2 properties (Dat lich)
+  tieuDeDatLich: undefined,
+  moTaDatLich: undefined,
+  hinhAnhDatLichAlt: 'Hình ảnh cho Đăng nhập/Đăng ký',
+  hinhAnhDatLichSrc: 'https://images.unsplash.com/photo-1711335755442-aabbc8aa64f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3NXw&ixlib=rb-4.0.3&q=80&w=1080',
+  lienKetDatLich: 'https://www.teleporthq.io',
+
+  // Page 3 properties (Danh sach bac si)
+  tieuDeDanhSachBacSi: undefined,
+  moTaDanhSachBacSi: undefined,
+  hinhAnhDanhSachBacSiAlt: 'Hình ảnh cho Danh sách bác sĩ',
+  hinhAnhDanhSachBacSiSrc: 'https://images.unsplash.com/photo-1508873699372-7aeab60b44ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3NXw&ixlib=rb-4.0.3&q=80&w=1080',
+  lienKetDanhSachBacSi: 'https://www.teleporthq.io',
+
+  // Page 4 properties (Quan ly lich hen)
+  tieuDeQuanLyLichHen: undefined,
+  moTaQuanLyLichHen: undefined,
+  hinhAnhQuanLyLichHenAlt: 'Hình ảnh cho Trang quản lý lịch đã đặt',
+  hinhAnhQuanLyLichHenSrc: 'https://images.unsplash.com/photo-1741242302244-168c45da19f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3NXw&ixlib=rb-4.0.3&q=80&w=1080',
+  lienKetQuanLyLichHen: 'https://www.teleporthq.io'
+}
 Navbar8.propTypes = {
-  linkUrlPage4: PropTypes.string,
-  link2Url: PropTypes.string,
-  page4Description: PropTypes.element,
-  page1ImageSrc: PropTypes.string,
-  action1: PropTypes.element,
-  page2ImageAlt: PropTypes.string,
-  link2: PropTypes.element,
-  linkUrlPage2: PropTypes.string,
+  // Logo properties
   logoAlt: PropTypes.string,
   logoSrc: PropTypes.string,
-  page3ImageAlt: PropTypes.string,
-  linkUrlPage1: PropTypes.string,
-  page1: PropTypes.element,
-  link1: PropTypes.element,
-  page4ImageSrc: PropTypes.string,
-  linkUrlPage3: PropTypes.string,
-  page4: PropTypes.element,
-  page2: PropTypes.element,
-  link4: PropTypes.element,
-  page4ImageAlt: PropTypes.string,
-  page1Description: PropTypes.element,
-  page2ImageSrc: PropTypes.string,
-  page3ImageSrc: PropTypes.string,
-  page2Description: PropTypes.element,
-  link3: PropTypes.element,
-  page3: PropTypes.element,
-  link1Url: PropTypes.string,
-  page3Description: PropTypes.element,
-  page1ImageAlt: PropTypes.string,
-  action2: PropTypes.element,
-  link3Url: PropTypes.string,
+
+  // Navigation links
+  trangChu: PropTypes.element,
+  trangChuUrl: PropTypes.string,
+  tinTuc: PropTypes.element,
+  tinTucUrl: PropTypes.string,
+  gioiThieu: PropTypes.element,
+  gioiThieuUrl: PropTypes.string,
+  them: PropTypes.element,
+
+  // Action buttons
+  nguoiDung: PropTypes.element,
+  dangNhapDangKy: PropTypes.element,
+
+  // Page 1 properties (Thanh toan)
+  tieuDeThanhToan: PropTypes.element,
+  moTaThanhToan: PropTypes.element,
+  hinhAnhThanhToanAlt: PropTypes.string,
+  hinhAnhThanhToanSrc: PropTypes.string,
+  lienKetThanhToan: PropTypes.string,
+
+  // Page 2 properties (Dat lich)
+  tieuDeDatLich: PropTypes.element,
+  moTaDatLich: PropTypes.element,
+  hinhAnhDatLichAlt: PropTypes.string,
+  hinhAnhDatLichSrc: PropTypes.string,
+  lienKetDatLich: PropTypes.string,
+
+  // Page 3 properties (Danh sach bac si)
+  tieuDeDanhSachBacSi: PropTypes.element,
+  moTaDanhSachBacSi: PropTypes.element,
+  hinhAnhDanhSachBacSiAlt: PropTypes.string,
+  hinhAnhDanhSachBacSiSrc: PropTypes.string,
+  lienKetDanhSachBacSi: PropTypes.string,
+
+  // Page 4 properties (Quan ly lich hen)
+  tieuDeQuanLyLichHen: PropTypes.element,
+  moTaQuanLyLichHen: PropTypes.element,
+  hinhAnhQuanLyLichHenAlt: PropTypes.string,
+  hinhAnhQuanLyLichHenSrc: PropTypes.string,
+  lienKetQuanLyLichHen: PropTypes.string
 }
 
 export default Navbar8

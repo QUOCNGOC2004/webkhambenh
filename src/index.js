@@ -8,8 +8,8 @@ import {
 } from 'react-router-dom'
 
 import './style.css'
-import Home from './views/home'
-import NotFound from './views/not-found'
+import Home from './views/js/home'
+import NotFound from './views/js/not-found'
 
 const App = () => {
   return (
