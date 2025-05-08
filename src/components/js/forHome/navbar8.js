@@ -496,14 +496,14 @@ Navbar8.defaultProps = {
   // Page 1 properties (Thanh toan)
   tieuDeThanhToan: undefined,
   moTaThanhToan: undefined,
-  hinhAnhThanhToanAlt: 'Hình ảnh cho Trang chủ',
+  hinhAnhThanhToanAlt: 'Hình ảnh cho Thanh toán',
   hinhAnhThanhToanSrc: 'https://images.unsplash.com/photo-1532045349218-5e783e9b5e2a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3NHw&ixlib=rb-4.0.3&q=80&w=1080',
   lienKetThanhToan: '/thanh-toan',
 
   // Page 2 properties (Dat lich)
   tieuDeDatLich: undefined,
   moTaDatLich: undefined,
-  hinhAnhDatLichAlt: 'Hình ảnh cho Đăng nhập/Đăng ký',
+  hinhAnhDatLichAlt: 'Hình ảnh cho Đặt lịch',
   hinhAnhDatLichSrc: 'https://images.unsplash.com/photo-1711335755442-aabbc8aa64f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3NXw&ixlib=rb-4.0.3&q=80&w=1080',
   lienKetDatLich: 'https://www.teleporthq.io',
 
@@ -519,7 +519,7 @@ Navbar8.defaultProps = {
   moTaQuanLyLichHen: undefined,
   hinhAnhQuanLyLichHenAlt: 'Hình ảnh cho Trang quản lý lịch đã đặt',
   hinhAnhQuanLyLichHenSrc: 'https://images.unsplash.com/photo-1741242302244-168c45da19f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3NXw&ixlib=rb-4.0.3&q=80&w=1080',
-  lienKetQuanLyLichHen: 'https://www.teleporthq.io'
+  lienKetQuanLyLichHen: undefined
 }
 Navbar8.propTypes = {
   // Logo properties
