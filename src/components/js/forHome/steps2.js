@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 
 import PropTypes from 'prop-types'
 
-import '../css/steps2.css'
+import '../../css/forHome/steps2.css'
 
 const Steps2 = (props) => {
   return (

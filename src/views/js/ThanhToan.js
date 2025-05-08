@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/ThanhToan.css';
+import '../../views/css/ThanhToan.css';
 
 const ThanhToan = () => {
   return (

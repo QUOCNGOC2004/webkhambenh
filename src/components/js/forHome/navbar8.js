@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
-import '../css/navbar8.css'
+import '../../css/forHome/navbar8.css'
 
 const Navbar8 = (props) => {
   const [link5AccordionOpen, setLink5AccordionOpen] = useState(false)

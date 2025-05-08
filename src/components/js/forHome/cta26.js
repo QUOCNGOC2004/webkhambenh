@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 
 import PropTypes from 'prop-types'
 
-import '../css/cta26.css'
+import '../../css/forHome/cta26.css'
 
 const CTA26 = (props) => {
   return (

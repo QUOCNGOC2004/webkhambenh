@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 
 import PropTypes from 'prop-types'
 
-import '../css/footer4.css'
+import '../../css/forHome/footer4.css'
 
 const Footer4 = (props) => {
   return (
