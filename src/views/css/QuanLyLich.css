@@ -1,4 +1,4 @@
-.dat-lich-container {
+.quan-ly-lich-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +7,7 @@
     padding: 20px;
   }
   
-.dat-lich-content {
+.quan-ly-lich-content {
     background-color: white;
     padding: 40px;
     border-radius: 10px;
@@ -17,21 +17,21 @@
     width: 100%;
   }
   
-.dat-lich-content h1 {
+.quan-ly-lich-content h1 {
     color: #333;
     margin-bottom: 20px;
   }
   
-.dat-lich-message {
+.quan-ly-lich-message {
     margin: 30px 0;
     color: #666;
   }
   
-.dat-lich-message p {
+.quan-ly-lich-message p {
     margin: 10px 0;
   }
   
-.dat-lich-button {
+.quan-ly-lich-button {
     background-color: #007bff;
     color: white;
     border: none;
@@ -42,6 +42,6 @@
     transition: background-color 0.3s;
   }
   
-.dat-lich-button:hover {
+.quan-ly-lich-button:hover {
     background-color: #0056b3;
   } 

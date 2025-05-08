@@ -19,7 +19,7 @@ const Navbar8 = (props) => {
               href={props.trangChuUrl}
               className="navbar8-link11 thq-link thq-body-small"
             >
-              {props.trangChu ?? (
+              {props.trangChu ?? ( 
                 <Fragment>
                   <span className="navbar8-text18">Trang chủ</span>
                 </Fragment>
@@ -505,21 +505,21 @@ Navbar8.defaultProps = {
   moTaDatLich: undefined,
   hinhAnhDatLichAlt: 'Hình ảnh cho Đặt lịch',
   hinhAnhDatLichSrc: 'https://images.unsplash.com/photo-1711335755442-aabbc8aa64f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3NXw&ixlib=rb-4.0.3&q=80&w=1080',
-  lienKetDatLich: 'https://www.teleporthq.io',
+  lienKetDatLich: '/dat-lich',
 
   // Page 3 properties (Danh sach bac si)
   tieuDeDanhSachBacSi: undefined,
   moTaDanhSachBacSi: undefined,
   hinhAnhDanhSachBacSiAlt: 'Hình ảnh cho Danh sách bác sĩ',
   hinhAnhDanhSachBacSiSrc: 'https://images.unsplash.com/photo-1508873699372-7aeab60b44ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3NXw&ixlib=rb-4.0.3&q=80&w=1080',
-  lienKetDanhSachBacSi: 'https://www.teleporthq.io',
+  lienKetDanhSachBacSi: '/danh-sach-bs',
 
   // Page 4 properties (Quan ly lich hen)
   tieuDeQuanLyLichHen: undefined,
   moTaQuanLyLichHen: undefined,
   hinhAnhQuanLyLichHenAlt: 'Hình ảnh cho Trang quản lý lịch đã đặt',
   hinhAnhQuanLyLichHenSrc: 'https://images.unsplash.com/photo-1741242302244-168c45da19f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3NXw&ixlib=rb-4.0.3&q=80&w=1080',
-  lienKetQuanLyLichHen: undefined
+  lienKetQuanLyLichHen: '/quan-ly-lich'
 }
 Navbar8.propTypes = {
   // Logo properties

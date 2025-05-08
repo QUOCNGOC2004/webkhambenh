@@ -1,18 +1,18 @@
 import React from 'react';
-import '../../views/css/DatLich.css';
+import '../../views/css/DanhSachBs.css';
 
-const DatLich = () => {
+const DanhSachBs = () => {
   return (
-    <div className="dat-lich-container">
-      <div className="dat-lich-content">
-        <h1>Trang Đặt lịch</h1>
+    <div className="danh-sach-bs-container">
+      <div className="danh-sach-bs-content">
+        <h1>Trang Danh sách bác sĩ</h1>
         <p>Trang đang trong quá trình phát triển</p>
-        <div className="dat-lich-message">
+        <div className="danh-sach-bs-message">
           <p>Chúng tôi đang nỗ lực hoàn thiện tính năng này.</p>
           <p>Vui lòng quay lại sau!</p>
         </div>
         <button 
-          className="dat-lich-button"
+          className="danh-sach-bs-button"
           onClick={() => window.history.back()}
         >
           Quay lại
@@ -22,4 +22,4 @@ const DatLich = () => {
   );
 };
 
-export default DatLich; 
+export default DanhSachBs; 
