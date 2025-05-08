@@ -5,7 +5,7 @@
   z-index: 1000;
   position: sticky;
   justify-content: center;
-  background-color: var(--dl-color-theme-neutral-light);
+  background-color: #f5ebeb;
 }
  
 .navbar8-navbar-interactive {
@@ -139,7 +139,7 @@
   position: absolute;
   flex-direction: column;
   justify-content: space-between;
-  background-color: var(--dl-color-theme-neutral-light);
+  background-color: #f5ebeb;
 }
  
 .navbar8-nav {
@@ -369,11 +369,6 @@
   flex-direction: row;
 }
  
-.navbar8-icon-group {
-  gap: var(--dl-layout-space-twounits);
-  display: flex;
-}
- 
 .navbar8-container7 {
   top: 100%;
   left: 0px;
@@ -384,7 +379,7 @@
   animation-name: fadeInDownBig;
   animation-delay: 0s;
   justify-content: center;
-  background-color: var(--dl-color-theme-neutral-light);
+  background-color: #f5ebeb;
   animation-duration: 300ms;
   animation-direction: normal;
   animation-iteration-count: 1;
