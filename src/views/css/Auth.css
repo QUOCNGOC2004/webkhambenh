@@ -107,6 +107,15 @@ form{ width: 100%; }
     font-size: 16px;
     color: #fff;
     font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.back-btn {
+    background: #666;
+}
+
+.back-btn:hover {
+    background: #555;
 }
 
 .social-icons{

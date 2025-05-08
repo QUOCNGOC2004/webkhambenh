@@ -76,12 +76,14 @@ const Auth: React.FC = () => {
                     <h1>Chào mừng trở lại!</h1>
                     <p>Bạn chưa có tài khoản?</p>
                     <button className="btn register-btn" onClick={handleRegisterClick}>Đăng ký</button>
+                    <button type="button" className="btn back-btn" onClick={() => window.history.back()}>Quay lại</button>
                 </div>
 
                 <div className="toggle-panel toggle-right">
                     <h1>Xin chào!</h1>
                     <p>Bạn đã có tài khoản?</p>
                     <button className="btn login-btn" onClick={handleLoginClick}>Đăng nhập</button>
+                    <button type="button" className="btn back-btn" onClick={() => window.history.back()}>Quay lại</button>
                 </div>
             </div>
         </div>
