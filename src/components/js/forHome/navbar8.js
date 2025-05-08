@@ -1,6 +1,5 @@
 import React, { useState, Fragment } from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
 import '../../css/forHome/navbar8.css'
 
 const Navbar8 = (props) => {
@@ -16,8 +15,8 @@ const Navbar8 = (props) => {
         />
         <div data-thq="thq-navbar-nav" className="navbar8-desktop-menu">
           <nav className="navbar8-links1">
-            <Link
-              to={props.trangChuUrl}
+            <a
+              href={props.trangChuUrl}
               className="navbar8-link11 thq-link thq-body-small"
             >
               {props.trangChu ?? (
@@ -25,16 +24,19 @@ const Navbar8 = (props) => {
                   <span className="navbar8-text18">Trang chủ</span>
                 </Fragment>
               )}
-            </Link>
-            <Link to={props.tinTucUrl} className="thq-link thq-body-small">
+            </a>
+            <a 
+              href={props.tinTucUrl} 
+              className="thq-link thq-body-small"
+            >
               {props.tinTuc ?? (
                 <Fragment>
                   <span className="navbar8-text16">Tin tức</span>
                 </Fragment>
               )}
-            </Link>
-            <Link
-              to={props.gioiThieuUrl}
+            </a>
+            <a
+              href={props.gioiThieuUrl}
               className="navbar8-link31 thq-link thq-body-small"
             >
               {props.gioiThieu ?? (
@@ -42,7 +44,7 @@ const Navbar8 = (props) => {
                   <span className="navbar8-text24">Giới thiệu</span>
                 </Fragment>
               )}
-            </Link>
+            </a>
             <div
               onClick={() => setLink5DropdownVisible(!link5DropdownVisible)}
               className="navbar8-link4-dropdown-trigger"
@@ -115,8 +117,8 @@ const Navbar8 = (props) => {
               </div>
             </div>
             <nav className="navbar8-links2">
-              <Link
-                to={props.trangChuUrl}
+              <a
+                href={props.trangChuUrl}
                 className="navbar8-link12 thq-link thq-body-small"
               >
                 {props.trangChu ?? (
@@ -124,16 +126,19 @@ const Navbar8 = (props) => {
                     <span className="navbar8-text18">Trang chủ</span>
                   </Fragment>
                 )}
-              </Link>
-              <Link to={props.tinTucUrl} className="thq-link thq-body-small">
+              </a>
+              <a 
+                href={props.tinTucUrl} 
+                className="thq-link thq-body-small"
+              >
                 {props.tinTuc ?? (
                   <Fragment>
                     <span className="navbar8-text16">Tin tức</span>
                   </Fragment>
                 )}
-              </Link>
-              <Link
-                to={props.gioiThieuUrl}
+              </a>
+              <a
+                href={props.gioiThieuUrl}
                 className="navbar8-link32 thq-link thq-body-small"
               >
                 {props.gioiThieu ?? (
@@ -141,7 +146,7 @@ const Navbar8 = (props) => {
                     <span className="navbar8-text24">Giới thiệu</span>
                   </Fragment>
                 )}
-              </Link>
+              </a>
               <div className="navbar8-link4-accordion">
                 <div
                   onClick={() => setLink5AccordionOpen(!link5AccordionOpen)}
@@ -175,7 +180,7 @@ const Navbar8 = (props) => {
                 </div>
                 {link5AccordionOpen && (
                   <div className="navbar8-container6">
-                    <Link to={props.lienKetThanhToan}>
+                    <a href={props.lienKetThanhToan}>
                       <div className="navbar8-menu-item1">
                         <img
                           alt={props.hinhAnhThanhToanAlt}
@@ -203,8 +208,8 @@ const Navbar8 = (props) => {
                           </span>
                         </div>
                       </div>
-                    </Link>
-                    <Link to={props.lienKetDatLich}>
+                    </a>
+                    <a href={props.lienKetDatLich}>
                       <div className="navbar8-menu-item2">
                         <img
                           alt={props.hinhAnhDatLichAlt}
@@ -232,8 +237,8 @@ const Navbar8 = (props) => {
                           </span>
                         </div>
                       </div>
-                    </Link>
-                    <Link to={props.lienKetDanhSachBacSi}>
+                    </a>
+                    <a href={props.lienKetDanhSachBacSi}>
                       <div className="navbar8-menu-item3">
                         <img
                           alt={props.hinhAnhDanhSachBacSiAlt}
@@ -261,8 +266,8 @@ const Navbar8 = (props) => {
                           </span>
                         </div>
                       </div>
-                    </Link>
-                    <Link to={props.lienKetQuanLyLichHen}>
+                    </a>
+                    <a href={props.lienKetQuanLyLichHen}>
                       <div className="navbar8-menu-item4">
                         <img
                           alt={props.hinhAnhQuanLyLichHenAlt}
@@ -290,7 +295,7 @@ const Navbar8 = (props) => {
                           </span>
                         </div>
                       </div>
-                    </Link>
+                    </a>
                   </div>
                 )}
               </div>
@@ -340,7 +345,7 @@ const Navbar8 = (props) => {
         {link5DropdownVisible && (
           <div className="navbar8-container7 thq-box-shadow">
             <div className="navbar8-link5-menu-list">
-              <Link to={props.lienKetThanhToan}>
+              <a href={props.lienKetThanhToan}>
                 <div className="navbar8-menu-item5">
                   <img
                     alt={props.hinhAnhThanhToanAlt}
@@ -368,8 +373,8 @@ const Navbar8 = (props) => {
                     </span>
                   </div>
                 </div>
-              </Link>
-              <Link to={props.lienKetDatLich}>
+              </a>
+              <a href={props.lienKetDatLich}>
                 <div className="navbar8-menu-item6">
                   <img
                     alt={props.hinhAnhDatLichAlt}
@@ -397,8 +402,8 @@ const Navbar8 = (props) => {
                     </span>
                   </div>
                 </div>
-              </Link>
-              <Link to={props.lienKetDanhSachBacSi}>
+              </a>
+              <a href={props.lienKetDanhSachBacSi}>
                 <div className="navbar8-menu-item7">
                   <img
                     alt={props.hinhAnhDanhSachBacSiAlt}
@@ -426,8 +431,8 @@ const Navbar8 = (props) => {
                     </span>
                   </div>
                 </div>
-              </Link>
-              <Link to={props.lienKetQuanLyLichHen}>
+              </a>
+              <a href={props.lienKetQuanLyLichHen}>
                 <div className="navbar8-menu-item8">
                   <img
                     alt={props.hinhAnhQuanLyLichHenAlt}
@@ -455,7 +460,7 @@ const Navbar8 = (props) => {
                     </span>
                   </div>
                 </div>
-              </Link>
+              </a>
             </div>
           </div>
         )}
