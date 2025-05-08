@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import '../../css/forHome/navbar8.css'
 
 const Navbar8 = (props) => {
-  const [link5AccordionOpen, setLink5AccordionOpen] = useState(false)
   const [link5DropdownVisible, setLink5DropdownVisible] = useState(false)
   return (
     <header className="navbar8-container1">
@@ -62,14 +61,14 @@ const Navbar8 = (props) => {
                 {link5DropdownVisible && (
                   <div className="navbar8-container2">
                     <svg viewBox="0 0 1024 1024" className="navbar8-icon10">
-                      <path d="M298 426h428l-214 214z"></path>
+                      <path d="M298 426h428l-214 214z"></path> {/*icon mũi tên xuống*/}
                     </svg>
                   </div>
                 )}
                 {!link5DropdownVisible && (
                   <div className="navbar8-container3">
                     <svg viewBox="0 0 1024 1024" className="navbar8-icon12">
-                      <path d="M426 726v-428l214 214z"></path>
+                      <path d="M426 726v-428l214 214z"></path> {/*icon mũi tên lên*/} 
                     </svg>
                   </div>
                 )}
@@ -95,231 +94,6 @@ const Navbar8 = (props) => {
                 )}
               </span>
             </button>
-          </div>
-        </div>
-        <div data-thq="thq-burger-menu" className="navbar8-burger-menu">
-          <svg viewBox="0 0 1024 1024" className="navbar8-icon14">
-            <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
-          </svg>
-        </div>
-        <div data-thq="thq-mobile-menu" className="navbar8-mobile-menu">
-          <div className="navbar8-nav">
-            <div className="navbar8-top">
-              <img
-                alt={props.logoAlt}
-                src={props.logoSrc}
-                className="navbar8-logo"
-              />
-              <div data-thq="thq-close-menu" className="navbar8-close-menu">
-                <svg viewBox="0 0 1024 1024" className="navbar8-icon16">
-                  <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
-                </svg>
-              </div>
-            </div>
-            <nav className="navbar8-links2">
-              <a
-                href={props.trangChuUrl}
-                className="navbar8-link12 thq-link thq-body-small"
-              >
-                {props.trangChu ?? (
-                  <Fragment>
-                    <span className="navbar8-text18">Trang chủ</span>
-                  </Fragment>
-                )}
-              </a>
-              <a 
-                href={props.tinTucUrl} 
-                className="thq-link thq-body-small"
-              >
-                {props.tinTuc ?? (
-                  <Fragment>
-                    <span className="navbar8-text16">Tin tức</span>
-                  </Fragment>
-                )}
-              </a>
-              <a
-                href={props.gioiThieuUrl}
-                className="navbar8-link32 thq-link thq-body-small"
-              >
-                {props.gioiThieu ?? (
-                  <Fragment>
-                    <span className="navbar8-text24">Giới thiệu</span>
-                  </Fragment>
-                )}
-              </a>
-              <div className="navbar8-link4-accordion">
-                <div
-                  onClick={() => setLink5AccordionOpen(!link5AccordionOpen)}
-                  className="navbar8-trigger"
-                >
-                  <span className="thq-link thq-body-small">
-                    {props.them ?? (
-                      <Fragment>
-                        <span className="navbar8-text21">
-                          Thêm
-                        </span>
-                      </Fragment>
-                    )}
-                  </span>
-                  <div className="navbar8-icon-container2">
-                    {link5AccordionOpen && (
-                      <div className="navbar8-container4">
-                        <svg viewBox="0 0 1024 1024" className="navbar8-icon18">
-                          <path d="M298 426h428l-214 214z"></path>
-                        </svg>
-                      </div>
-                    )}
-                    {!link5AccordionOpen && (
-                      <div className="navbar8-container5">
-                        <svg viewBox="0 0 1024 1024" className="navbar8-icon20">
-                          <path d="M426 726v-428l214 214z"></path>
-                        </svg>
-                      </div>
-                    )}
-                  </div>
-                </div>
-                {link5AccordionOpen && (
-                  <div className="navbar8-container6">
-                    <a href={props.lienKetThanhToan}>
-                      <div className="navbar8-menu-item1">
-                        <img
-                          alt={props.hinhAnhThanhToanAlt}
-                          src={props.hinhAnhThanhToanSrc}
-                          className="navbar8-page1-image1"
-                        />
-                        <div className="navbar8-content1">
-                          <span className="navbar8-page11 thq-body-large">
-                            {props.tieuDeThanhToan ?? (
-                              <Fragment>
-                                <span className="navbar8-text17">
-                                  Thanh toán
-                                </span>
-                              </Fragment>
-                            )}
-                          </span>
-                          <span className="thq-body-small">
-                            {props.moTaThanhToan ?? (
-                              <Fragment>
-                                <span className="navbar8-text22">
-                                  Thanh toán trước tiền hẹn khám
-                                </span>
-                              </Fragment>
-                            )}
-                          </span>
-                        </div>
-                      </div>
-                    </a>
-                    <a href={props.lienKetDatLich}>
-                      <div className="navbar8-menu-item2">
-                        <img
-                          alt={props.hinhAnhDatLichAlt}
-                          src={props.hinhAnhDatLichSrc}
-                          className="navbar8-page2-image1"
-                        />
-                        <div className="navbar8-content2">
-                          <span className="navbar8-page21 thq-body-large">
-                            {props.tieuDeDatLich ?? (
-                              <Fragment>
-                                <span className="navbar8-text20">
-                                  Đặt lịch hẹn
-                                </span>
-                              </Fragment>
-                            )}
-                          </span>
-                          <span className="thq-body-small">
-                            {props.moTaDatLich ?? (
-                              <Fragment>
-                                <span className="navbar8-text23">
-                                  Đặt lịch khám trước với bác sĩ
-                                </span>
-                              </Fragment>
-                            )}
-                          </span>
-                        </div>
-                      </div>
-                    </a>
-                    <a href={props.lienKetDanhSachBacSi}>
-                      <div className="navbar8-menu-item3">
-                        <img
-                          alt={props.hinhAnhDanhSachBacSiAlt}
-                          src={props.hinhAnhDanhSachBacSiSrc}
-                          className="navbar8-page3-image1"
-                        />
-                        <div className="navbar8-content3">
-                          <span className="navbar8-page31 thq-body-large">
-                            {props.tieuDeDanhSachBacSi ?? (
-                              <Fragment>
-                                <span className="navbar8-text25">
-                                  Danh sách bác sĩ
-                                </span>
-                              </Fragment>
-                            )}
-                          </span>
-                          <span className="thq-body-small">
-                            {props.moTaDanhSachBacSi ?? (
-                              <Fragment>
-                                <span className="navbar8-text26">
-                                  Xem danh sách bác sĩ
-                                </span>
-                              </Fragment>
-                            )}
-                          </span>
-                        </div>
-                      </div>
-                    </a>
-                    <a href={props.lienKetQuanLyLichHen}>
-                      <div className="navbar8-menu-item4">
-                        <img
-                          alt={props.hinhAnhQuanLyLichHenAlt}
-                          src={props.hinhAnhQuanLyLichHenSrc}
-                          className="navbar8-page4-image1"
-                        />
-                        <div className="navbar8-content4">
-                          <span className="navbar8-page41 thq-body-large">
-                            {props.tieuDeQuanLyLichHen ?? (
-                              <Fragment>
-                                <span className="navbar8-text19">
-                                  Quản lý lịch hẹn
-                                </span>
-                              </Fragment>
-                            )}
-                          </span>
-                          <span className="thq-body-small">
-                            {props.moTaQuanLyLichHen ?? (
-                              <Fragment>
-                                <span className="navbar8-text14">
-                                  Quản lý lịch hẹn của bạn
-                                </span>
-                              </Fragment>
-                            )}
-                          </span>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                )}
-              </div>
-            </nav>
-            <div className="navbar8-buttons2">
-              <button className="thq-button-filled">
-                <span>
-                  {props.nguoiDung ?? (
-                    <Fragment>
-                      <span className="navbar8-text15">Người dùng</span>
-                    </Fragment>
-                  )}
-                </span>
-              </button>
-              <button className="thq-button-outline">
-                <span>
-                  {props.dangNhapDangKy ?? (
-                    <Fragment>
-                      <span className="navbar8-text27">Đăng nhập/Đăng ký</span>
-                    </Fragment>
-                  )}
-                </span>
-              </button>
-            </div>
           </div>
         </div>
         {link5DropdownVisible && (

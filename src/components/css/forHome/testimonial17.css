@@ -180,27 +180,3 @@
 .testimonial17-text37 {
   display: inline-block;
 }
- 
-@media(max-width: 991px) {
-  .testimonial17-container10 {
-    margin-bottom: var(--dl-layout-space-threeunits);
-  }
-}
- 
-@media(max-width: 767px) {
-  .testimonial17-container10 {
-    margin-bottom: var(--dl-layout-space-oneandhalfunits);
-  }
-  .testimonial17-card1 {
-    width: 100%;
-  }
-  .testimonial17-card2 {
-    width: 100%;
-  }
-  .testimonial17-card3 {
-    width: 100%;
-  }
-  .testimonial17-card4 {
-    width: 100%;
-  }
-}

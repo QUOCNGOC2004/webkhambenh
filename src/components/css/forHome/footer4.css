@@ -105,26 +105,3 @@
 .footer4-text21 {
   display: inline-block;
 }
- 
-@media(max-width: 767px) {
-  .footer4-row {
-    gap: var(--dl-layout-space-oneandhalfunits);
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
- 
-@media(max-width: 479px) {
-  .footer4-max-width {
-    gap: var(--dl-layout-space-oneandhalfunits);
-  }
-  .footer4-links {
-    flex-direction: column;
-  }
-  .footer4-footer-links {
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-  }
-}

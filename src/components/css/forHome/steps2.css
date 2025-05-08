@@ -152,38 +152,3 @@
 .steps2-text32 {
   display: inline-block;
 }
- 
-@media(max-width: 991px) {
-  .steps2-max-width {
-    flex-direction: column;
-  }
-}
- 
-@media(max-width: 767px) {
-  .steps2-section-header {
-    position: static;
-    margin-bottom: var(--dl-layout-space-twounits);
-  }
-  .steps2-actions {
-    width: 100%;
-    align-self: flex-start;
-  }
-  .steps2-container4 {
-    width: 100%;
-  }
-  .steps2-container5 {
-    width: 100%;
-  }
-  .steps2-container6 {
-    width: 100%;
-  }
-  .steps2-container7 {
-    width: 100%;
-  }
-}
- 
-@media(max-width: 479px) {
-  .steps2-button {
-    width: 100%;
-  }
-}

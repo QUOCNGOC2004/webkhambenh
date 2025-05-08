@@ -71,22 +71,3 @@
 .cta26-text6 {
   display: inline-block;
 }
- 
-@media(max-width: 767px) {
-  .cta26-container2 {
-    gap: var(--dl-layout-space-oneandhalfunits);
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-}
- 
-@media(max-width: 479px) {
-  .cta26-actions {
-    flex-wrap: wrap;
-    align-self: stretch;
-    justify-content: center;
-  }
-  .cta26-button {
-    flex: 1;
-  }
-}

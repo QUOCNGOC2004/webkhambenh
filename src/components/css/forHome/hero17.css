@@ -198,22 +198,3 @@
 .hero17-text8 {
   display: inline-block;
 }
- 
-@media(max-width: 767px) {
-  .hero17-content2 {
-    width: 100%;
-  }
-}
- 
-@media(max-width: 479px) {
-  .hero17-actions {
-    width: 100%;
-    flex-direction: column;
-  }
-  .hero17-button1 {
-    width: 100%;
-  }
-  .hero17-button2 {
-    width: 100%;
-  }
-}

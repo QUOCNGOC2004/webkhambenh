@@ -21,72 +21,72 @@ const Home = (props) => {
         <meta property="og:title" content="Hệ thống đặt lịch khám bệnh trực tuyến" />
       </Helmet>
       <Navbar8
-        page4Description={
+        moTaQuanLyLichHen={
           <Fragment>
             <span className="home-text100">Quản lý lịch hẹn của bạn</span>
           </Fragment>
         }
-        action1={
+        nguoiDung={
           <Fragment>
             <span className="home-text101">Người dùng</span>
           </Fragment>
         }
-        link2={
+        tinTuc={
           <Fragment>
             <span className="home-text102">Tin tức</span>
           </Fragment>
         }
-        page1={
+        tieuDeThanhToan={
           <Fragment>
             <span className="home-text103">Thanh toán</span>
           </Fragment>
         }
-        link1={
+        trangChu={
           <Fragment>
             <span className="home-text104">Trang chủ</span>
           </Fragment>
         }
-        page4={
+        tieuDeQuanLyLichHen={
           <Fragment>
             <span className="home-text105">Quản lý lịch hẹn</span>
           </Fragment>
         }
-        page2={
+        tieuDeDatLich={
           <Fragment>
             <span className="home-text106">Đặt lịch hẹn</span>
           </Fragment>
         }
-        link4={
+        them={
           <Fragment>
             <span className="home-text107">Thêm</span>
           </Fragment>
         }
-        page1Description={
+        moTaThanhToan={
           <Fragment>
             <span className="home-text108">Thanh toán trước tiền hẹn khám</span>
           </Fragment>
         }
-        page2Description={
+        moTaDatLich={
           <Fragment>
             <span className="home-text109">Đặt lịch khám trước với bác sĩ</span>
           </Fragment>
         }
-        link3={
+        gioiThieu={
           <Fragment>
             <span className="home-text110">Giới thiệu</span>
           </Fragment>
         }
-        page3={
+        tieuDeDanhSachBacSi={
           <Fragment>
             <span className="home-text111">Danh sách bác sĩ</span>
           </Fragment>
         }
-        page3Description={
+        moTaDanhSachBacSi={
           <Fragment>
             <span className="home-text112">Xem danh sách bác sĩ</span>
           </Fragment>
         }
-        action2={
+        dangNhapDangKy={
           <Fragment>
             <span className="home-text113">Đăng nhập/Đăng ký</span>
           </Fragment>
