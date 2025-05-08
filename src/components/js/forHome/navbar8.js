@@ -1,9 +1,16 @@
 import React, { useState, Fragment } from 'react'
 import PropTypes from 'prop-types'
+import { useHistory } from 'react-router-dom'
 import '../../css/forHome/navbar8.css'
 
 const Navbar8 = (props) => {
   const [link5DropdownVisible, setLink5DropdownVisible] = useState(false)
+  const history = useHistory()
+
+  const handleDangNhapDangKyClick = () => {
+    history.push('/dang-nhap-dang-ky')
+  }
+
   return (
     <header className="navbar8-container1">
       <header data-thq="thq-navbar" className="navbar8-navbar-interactive">
@@ -85,7 +92,10 @@ const Navbar8 = (props) => {
                 )}
               </span>
             </button>
-            <button className="navbar8-action21 thq-button-outline thq-button-animated">
+            <button 
+              onClick={handleDangNhapDangKyClick}
+              className="navbar8-action21 thq-button-outline thq-button-animated"
+            >
               <span>
                 {props.dangNhapDangKy ?? (
                   <Fragment>

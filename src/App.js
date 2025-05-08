@@ -5,6 +5,7 @@ import DatLich from './views/js/DatLich';
 import DanhSachBs from './views/js/DanhSachBs';
 import QuanLyLich from './views/js/QuanLyLich';
 import NotFound from './views/js/not-found';
+import Auth from './views/js/Auth';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/dat-lich" component={DatLich} />
         <Route path="/danh-sach-bs" component={DanhSachBs} />
         <Route path="/quan-ly-lich" component={QuanLyLich} />
+        <Route path="/dang-nhap-dang-ky" component={Auth} />
         <Route path="*" component={NotFound} />
       </Switch>
     </Router>
