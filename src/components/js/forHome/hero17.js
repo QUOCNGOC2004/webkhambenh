@@ -218,45 +218,45 @@ const Hero17 = (props) => {
 
 Hero17.defaultProps = {
   image3Src:
-    'https://images.unsplash.com/photo-1488229297570-58520851e868?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3NXw&ixlib=rb-4.0.3&q=80&w=1080',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSBXhp_AiWPXZnUMRNWO-Js-zUxYY3o0C5ow&s',
   image8Alt: 'Hero Image',
   image2Src:
-    'https://images.unsplash.com/photo-1644168819398-7d73bc566488?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3Nnw&ixlib=rb-4.0.3&q=80&w=1080',
+    'https://phenikaa-uni.edu.vn:3600/pu/vi/posts/ldh8770.jpg',
   image6Alt: 'Hero Image',
   image11Src:
-    'https://images.unsplash.com/photo-1708352547543-26fcdec780af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3Nnw&ixlib=rb-4.0.3&q=80&w=1080',
+    'https://giadinh.phenikaa.com/wp-content/uploads/2023/11/z4919661580419_184e64379360e52660e732212dbe734d.jpg',
   image5Alt: 'Hero Image',
   image1Alt: 'Doctor with patient',
   image7Src:
-    'https://images.unsplash.com/photo-1533160772606-ba8c6a74d336?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3N3w&ixlib=rb-4.0.3&q=80&w=1080',
+    'https://phenikaamec.com/_next/image?url=https%3A%2F%2Fcdn.phenikaamec.com%2Fphenikaa%2Finsert-editor-image%2F10-11-2024%2F1c1299ce-d11c-42c3-8c52-016503389762-Nguyen-Duy-Tuan.png&w=640&q=75',
   image7Alt: 'Hero Image',
   image12Alt: 'Hero Image',
   image2Alt: 'Calendar',
   image6Src:
-    'https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3N3w&ixlib=rb-4.0.3&q=80&w=1080',
+    'https://phenikaa-uni.edu.vn:3600/pu/vi/posts/dsc00085.jpg',
   image12Src:
-    'https://images.unsplash.com/photo-1637071076879-f60b5ec73a04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3N3w&ixlib=rb-4.0.3&q=80&w=1080',
+    'https://phenikaamec.com/_next/image?url=https%3A%2F%2Fcdn.phenikaamec.com%2Fphenikaa%2Finsert-editor-image%2F10-29-2024%2F23867b59-970f-4bb0-b0d7-cd104b308329-nguyen-van-hung.png&w=640&q=75',
   image3Alt: 'Hero Image',
   image9Src:
-    'https://images.unsplash.com/photo-1716718406028-1229c98d0eba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3OHw&ixlib=rb-4.0.3&q=80&w=1080',
+    'https://giadinh.mediacdn.vn/zoom/700_438/296230595582509056/2025/2/26/avatar1740538920502-1740538920957236578117.jpg',
   image11Alt: 'Hero Image',
   action2: undefined,
   action1: undefined,
   image8Src:
-    'https://images.unsplash.com/photo-1634692843550-8ddff2a880ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3OHw&ixlib=rb-4.0.3&q=80&w=1080',
+    'https://phenikaa-uni.edu.vn:3600/pu/vi/posts/kykhoa00989-compressed.jpg',
   image5Src:
-    'https://images.unsplash.com/photo-1541462608143-67571c6738dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY4MHw&ixlib=rb-4.0.3&q=80&w=1080',
+    'https://phenikaa-uni.edu.vn:3600/fn/vi/posts/anh-title.jpg',
   image4Src:
-    'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY4MHw&ixlib=rb-4.0.3&q=80&w=1080',
+    'https://vcdn1-vnexpress.vnecdn.net/2023/07/14/image003-7397-1689327306.jpg?w=460&h=0&q=100&dpr=2&fit=crop&s=Gf67p9m_j67uZf_PHOYrZQ',
   image10Alt: 'Hero Image',
   image4Alt: 'Hero Image',
   heading1: undefined,
   content1: undefined,
   image10Src:
-    'https://images.unsplash.com/photo-1515954487644-3640503f6594?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY4MHw&ixlib=rb-4.0.3&q=80&w=1080',
+    'https://phenikaa-uni.edu.vn:3600/pu/vi/gian-thong-tin-phenikaa-thu-hut-dong-dao-bac-si-tre-tai-nang-tai-ngay-hoi-viec-lam/dsc1363-enhanced-nr.jpg',
   image9Alt: 'Hero Image',
   image1Src:
-    'https://images.unsplash.com/photo-1636536319140-9e9004277dc0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY4MXw&ixlib=rb-4.0.3&q=80&w=1080',
+    'https://nld.mediacdn.vn/291774122806476800/2025/4/16/anh-chup-man-hinh-2025-04-16-luc-172821-1744799608713885340391.png',
 }
 
 Hero17.propTypes = {
