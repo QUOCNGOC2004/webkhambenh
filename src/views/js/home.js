@@ -177,40 +177,40 @@ const Home = (props) => {
         }
       ></CTA26>
       <Features25
-        feature3Description={
+        moTa3={
           <Fragment>
             <span className="home-text127">
               Chỉ việc đến khám bệnh, không gây mất thời gian.
             </span>
           </Fragment>
         }
-        feature1Description={
+        moTa1={
           <Fragment>
             <span className="home-text128">
               Website của chúng tôi cung cấp giao diện thân thiện giúp dễ dàng điều hướng và đặt lịch một cách thuận tiện.
             </span>
           </Fragment>
         }
-        feature2Title={
+        tieuDe2={
           <Fragment>
             <span className="home-text129">
               Lọc theo chuyên khoa và lịch trống
             </span>
           </Fragment>
         }
-        feature1Title={
+        tieuDe1={
           <Fragment>
             <span className="home-text130">Giao diện thân thiện</span>
           </Fragment>
         }
-        feature2Description={
+        moTa2={
           <Fragment>
             <span className="home-text131">
               Dễ dàng lọc danh sách bác sĩ theo chuyên khoa và lịch trống để tìm bác sĩ phù hợp với nhu cầu của bạn.
             </span>
           </Fragment>
         }
-        feature3Title={
+        tieuDe3={
           <Fragment>
             <span className="home-text132">Thanh toán tiện lợi</span>
           </Fragment>

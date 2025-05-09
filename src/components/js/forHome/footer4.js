@@ -85,7 +85,7 @@ const Footer4 = (props) => {
           <div className="thq-divider-horizontal"></div>
           <div className="footer4-row">
             <div className="footer4-container">
-              <span className="thq-body-small">© 2024 TeleportHQ</span>
+              <span className="thq-body-small">Nhóm 13 - Ứng dụng phân tán</span>
             </div>
             <div className="footer4-footer-links">
               <span className="footer4-text11 thq-body-small">
@@ -126,7 +126,7 @@ Footer4.defaultProps = {
   link4: undefined,
   logoAlt: 'Logo của trang web',
   cookiesLink: undefined,
-  logoSrc: 'https://presentation-website-assets.teleporthq.io/logos/logo.png',
+  logoSrc: 'https://library.phenikaa-uni.edu.vn/sites/default/files/logo_vn.png',
   privacyLink: undefined,
 }
 

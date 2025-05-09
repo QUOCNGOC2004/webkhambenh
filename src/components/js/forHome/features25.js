@@ -19,20 +19,19 @@ const Features25 = (props) => {
             </div>
             <div className="features25-content1">
               <h2 className="thq-heading-2">
-                {props.feature1Title ?? (
+                {props.tieuDe1 ?? (
                   <Fragment>
                     <span className="features25-text4">
-                      User-Friendly Interface
+                      Giao diện thân thiện với người dùng
                     </span>
                   </Fragment>
                 )}
               </h2>
               <span className="thq-body-small">
-                {props.feature1Description ?? (
+                {props.moTa1 ?? (
                   <Fragment>
                     <span className="features25-text2">
-                      Our website provides a user-friendly interface for easy
-                      navigation and seamless booking experience.
+                      Website của chúng tôi cung cấp giao diện thân thiện giúp dễ dàng điều hướng và đặt lịch một cách thuận tiện.
                     </span>
                   </Fragment>
                 )}
@@ -48,21 +47,19 @@ const Features25 = (props) => {
             </div>
             <div className="features25-content2">
               <h2 className="thq-heading-2">
-                {props.feature2Title ?? (
+                {props.tieuDe2 ?? (
                   <Fragment>
                     <span className="features25-text3">
-                      Filter by Specialization and Availability
+                      Lọc theo chuyên khoa và lịch trống
                     </span>
                   </Fragment>
                 )}
               </h2>
               <span className="thq-body-small">
-                {props.feature2Description ?? (
+                {props.moTa2 ?? (
                   <Fragment>
                     <span className="features25-text5">
-                      Easily filter through a list of doctors based on their
-                      specialization and availability to find the right match
-                      for your needs.
+                      Dễ dàng lọc danh sách bác sĩ theo chuyên khoa và lịch trống để tìm bác sĩ phù hợp với nhu cầu của bạn.
                     </span>
                   </Fragment>
                 )}
@@ -78,18 +75,17 @@ const Features25 = (props) => {
             </div>
             <div className="features25-content3">
               <h2 className="thq-heading-2">
-                {props.feature3Title ?? (
+                {props.tieuDe3 ?? (
                   <Fragment>
-                    <span className="features25-text6">Responsive Design</span>
+                    <span className="features25-text6">Thiết kế phản hồi</span>
                   </Fragment>
                 )}
               </h2>
               <span className="thq-body-small">
-                {props.feature3Description ?? (
+                {props.moTa3 ?? (
                   <Fragment>
                     <span className="features25-text1">
-                      Enjoy a responsive design that adapts to different screen
-                      sizes, ensuring a consistent experience across devices.
+                      Trải nghiệm giao diện thích ứng với mọi kích thước màn hình, đảm bảo trải nghiệm nhất quán trên mọi thiết bị.
                     </span>
                   </Fragment>
                 )}
@@ -100,22 +96,22 @@ const Features25 = (props) => {
         <div className="features25-image-container">
           {activeTab === 0 && (
             <img
-              alt={props.feature1ImgAlt}
-              src={props.feature1ImgSrc}
+              alt={props.hinhAnh1Alt}
+              src={props.hinhAnh1Src}
               className="features25-image1 thq-img-ratio-16-9"
             />
           )}
           {activeTab === 1 && (
             <img
-              alt={props.feature2ImgAlt}
-              src={props.feature2ImgSrc}
+              alt={props.hinhAnh2Alt}
+              src={props.hinhAnh2Src}
               className="features25-image2 thq-img-ratio-16-9"
             />
           )}
           {activeTab === 2 && (
             <img
-              alt={props.feature3ImgAlt}
-              src={props.feature3ImgSrc}
+              alt={props.hinhAnh3Alt}
+              src={props.hinhAnh3Src}
               className="features25-image3 thq-img-ratio-16-9"
             />
           )}
@@ -126,36 +122,36 @@ const Features25 = (props) => {
 }
 
 Features25.defaultProps = {
-  feature3Description: undefined,
-  feature1ImgAlt: 'User-Friendly Interface Image Alt Text',
-  feature1Description: undefined,
-  feature3ImgAlt: 'Responsive Design Image Alt Text',
-  feature2Title: undefined,
-  feature1Title: undefined,
-  feature1ImgSrc:
-    'https://images.unsplash.com/photo-1673280167171-d2a3303dff1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3NXw&ixlib=rb-4.0.3&q=80&w=1080',
-  feature3ImgSrc:
-    'https://images.unsplash.com/photo-1578988022336-4cb4efc0dcd2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3Nnw&ixlib=rb-4.0.3&q=80&w=1080',
-  feature2Description: undefined,
-  feature3Title: undefined,
-  feature2ImgAlt: 'Filter by Specialization and Availability Image Alt Text',
-  feature2ImgSrc:
-    'https://images.unsplash.com/photo-1689289270364-8c94840201b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3N3w&ixlib=rb-4.0.3&q=80&w=1080',
+  moTa3: undefined,
+  hinhAnh1Alt: 'Hình ảnh giao diện thân thiện',
+  moTa1: undefined,
+  hinhAnh3Alt: 'Hình ảnh thanh toán tiện lợi',
+  tieuDe2: undefined,
+  tieuDe1: undefined,
+  hinhAnh1Src:
+    'https://subiz.com.vn/blog/wp-content/uploads/2023/12/subiz-trang-web-than-thien-voi-nguoi-dung-e1703588784483.png',
+  hinhAnh3Src:
+    'https://png.pngtree.com/element_our/20200610/ourlarge/pngtree-mobile-payment-successful-payment-image_2250250.jpg',
+  moTa2: undefined,
+  tieuDe3: undefined,
+  hinhAnh2Alt: 'Hình ảnh lọc theo chuyên khoa và lịch trống',
+  hinhAnh2Src:
+    'https://media.istockphoto.com/id/1213515925/vi/vec-to/kh%C3%A1i-ni%E1%BB%87m-c%E1%BB%A7a-%C4%91%E1%BB%99i-ng%C5%A9-y-t%E1%BA%BF.jpg?s=612x612&w=0&k=20&c=Cx2WpYwUG_hu71r2-sZkV6ae8DlTuonaM64t8vmHsSI=',
 }
 
 Features25.propTypes = {
-  feature3Description: PropTypes.element,
-  feature1ImgAlt: PropTypes.string,
-  feature1Description: PropTypes.element,
-  feature3ImgAlt: PropTypes.string,
-  feature2Title: PropTypes.element,
-  feature1Title: PropTypes.element,
-  feature1ImgSrc: PropTypes.string,
-  feature3ImgSrc: PropTypes.string,
-  feature2Description: PropTypes.element,
-  feature3Title: PropTypes.element,
-  feature2ImgAlt: PropTypes.string,
-  feature2ImgSrc: PropTypes.string,
+  moTa3: PropTypes.element,
+  hinhAnh1Alt: PropTypes.string,
+  moTa1: PropTypes.element,
+  hinhAnh3Alt: PropTypes.string,
+  tieuDe2: PropTypes.element,
+  tieuDe1: PropTypes.element,
+  hinhAnh1Src: PropTypes.string,
+  hinhAnh3Src: PropTypes.string,
+  moTa2: PropTypes.element,
+  tieuDe3: PropTypes.element,
+  hinhAnh2Alt: PropTypes.string,
+  hinhAnh2Src: PropTypes.string,
 }
 
 export default Features25
