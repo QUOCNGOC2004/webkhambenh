@@ -17,48 +17,28 @@ const Footer4 = (props) => {
             />
           </div>
           <div className="footer4-links">
-            <a
-              href="https://example.com"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="thq-body-small"
-            >
+            <span className="thq-body-small">
               {props.link1 ?? (
                 <Fragment>
                   <span className="footer4-text16">Trang chủ</span>
                 </Fragment>
               )}
-            </a>
-            <a
-              href="https://example.com"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="thq-body-small"
-            >
+            </span>
+            <span className="thq-body-small">
               {props.link2 ?? (
                 <Fragment>
                   <span className="footer4-text18">Đăng nhập/Đăng ký</span>
                 </Fragment>
               )}
-            </a>
-            <a
-              href="https://example.com"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="thq-body-small"
-            >
+            </span>
+            <span className="thq-body-small">
               {props.link3 ?? (
                 <Fragment>
                   <span className="footer4-text15">Danh sách bác sĩ</span>
                 </Fragment>
               )}
-            </a>
-            <a
-              href="https://example.com"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="thq-body-small"
-            >
+            </span>
+            <span className="thq-body-small">
               {props.link4 ?? (
                 <Fragment>
                   <span className="footer4-text19">
@@ -66,19 +46,14 @@ const Footer4 = (props) => {
                   </span>
                 </Fragment>
               )}
-            </a>
-            <a
-              href="https://example.com"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="thq-body-small"
-            >
+            </span>
+            <span className="thq-body-small">
               {props.link5 ?? (
                 <Fragment>
                   <span className="footer4-text14">Liên hệ</span>
                 </Fragment>
               )}
-            </a>
+            </span>
           </div>
         </div>
         <div className="footer4-credits">
