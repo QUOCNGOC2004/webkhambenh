@@ -119,40 +119,40 @@ const Home = (props) => {
         }
       ></Hero17>
       <Features24
-        feature3Description={
+        moTa3={
           <Fragment>
             <span className="home-text118">
-              Xem lịch trống của bác sĩ và đặt lịch hẹn dễ dàng
+              Đến đúng thời gian thay vì đợi đến lượt khám bệnh.
             </span>
           </Fragment>
         }
-        feature3Title={
+        tieuDe3={
           <Fragment>
             <span className="home-text119">Đặt lịch hẹn</span>
           </Fragment>
         }
-        feature2Description={
+        moTa2={
           <Fragment>
             <span className="home-text120">
-              Tìm kiếm danh sách bác sĩ với bộ lọc theo chuyên khoa và lịch trống
+              Ưu tiên khám bệnh với bác sĩ chuyên khoa phù hợp và lịch trống.
             </span>
           </Fragment>
         }
-        feature1Title={
+        tieuDe1={
           <Fragment>
-            <span className="home-text121">Giao diện thân thiện</span>
+            <span className="home-text121">Đội ngũ bác sĩ tận tâm</span>
           </Fragment>
         }
-        feature1Description={
+        moTa1={
           <Fragment>
             <span className="home-text122">
-              Thiết kế hiện đại và phản hồi nhanh cho trải nghiệm người dùng tốt nhất
+              Đội ngũ bác sĩ tận tâm, chuyên nghiệp và có kinh nghiệm.
             </span>
           </Fragment>
         }
-        feature2Title={
+        tieuDe2={
           <Fragment>
-            <span className="home-text123">Tìm bác sĩ</span>
+            <span className="home-text123">Ưu tiên khám bệnh </span>
           </Fragment>
         }
       ></Features24>
@@ -180,7 +180,7 @@ const Home = (props) => {
         feature3Description={
           <Fragment>
             <span className="home-text127">
-              Trải nghiệm giao diện thích ứng với mọi kích thước màn hình, đảm bảo trải nghiệm nhất quán trên mọi thiết bị.
+              Chỉ việc đến khám bệnh, không gây mất thời gian.
             </span>
           </Fragment>
         }
@@ -212,7 +212,7 @@ const Home = (props) => {
         }
         feature3Title={
           <Fragment>
-            <span className="home-text132">Thiết kế phản hồi</span>
+            <span className="home-text132">Thanh toán tiện lợi</span>
           </Fragment>
         }
       ></Features25>

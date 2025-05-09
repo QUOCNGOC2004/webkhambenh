@@ -12,22 +12,22 @@ const Features24 = (props) => {
         <div className="features24-image-container">
           {activeTab === 0 && (
             <img
-              alt={props.feature1ImgAlt}
-              src={props.feature1ImgSrc}
+              alt={props.hinhAnh1Alt}
+              src={props.hinhAnh1Src}
               className="features24-image1 thq-img-ratio-16-9"
             />
           )}
           {activeTab === 1 && (
             <img
-              alt={props.feature2ImgAlt}
-              src={props.feature2ImgSrc}
+              alt={props.hinhAnh2Alt}
+              src={props.hinhAnh2Src}
               className="features24-image2 thq-img-ratio-16-9"
             />
           )}
           {activeTab === 2 && (
             <img
-              alt={props.feature3ImgAlt}
-              src={props.feature3ImgSrc}
+              alt={props.hinhAnh3Alt}
+              src={props.hinhAnh3Src}
               className="features24-image3 thq-img-ratio-16-9"
             />
           )}
@@ -42,19 +42,19 @@ const Features24 = (props) => {
             </div>
             <div className="features24-content1">
               <h2 className="thq-heading-2">
-                {props.feature1Title ?? (
+                {props.tieuDe1 ?? (
                   <Fragment>
                     <span className="features24-text4">
-                      User-friendly Interface
+                      Giao diện thân thiện với người dùng
                     </span>
                   </Fragment>
                 )}
               </h2>
               <span className="thq-body-small">
-                {props.feature1Description ?? (
+                {props.moTa1 ?? (
                   <Fragment>
                     <span className="features24-text5">
-                      Modern and responsive design for seamless user experience
+                      Thiết kế hiện đại và phản hồi nhanh cho trải nghiệm người dùng mượt mà
                     </span>
                   </Fragment>
                 )}
@@ -70,18 +70,17 @@ const Features24 = (props) => {
             </div>
             <div className="features24-content2">
               <h2 className="thq-heading-2">
-                {props.feature2Title ?? (
+                {props.tieuDe2 ?? (
                   <Fragment>
-                    <span className="features24-text6">Find Doctors</span>
+                    <span className="features24-text6">Tìm kiếm bác sĩ</span>
                   </Fragment>
                 )}
               </h2>
               <span className="thq-body-small">
-                {props.feature2Description ?? (
+                {props.moTa2 ?? (
                   <Fragment>
                     <span className="features24-text3">
-                      Explore a list of doctors with filters by specialty and
-                      availability
+                      Khám phá danh sách bác sĩ với bộ lọc theo chuyên khoa và lịch hẹn
                     </span>
                   </Fragment>
                 )}
@@ -97,18 +96,17 @@ const Features24 = (props) => {
             </div>
             <div className="features24-content3">
               <h2 className="thq-heading-2">
-                {props.feature3Title ?? (
+                {props.tieuDe3 ?? (
                   <Fragment>
-                    <span className="features24-text2">Book Appointments</span>
+                    <span className="features24-text2">Đặt lịch hẹn</span>
                   </Fragment>
                 )}
               </h2>
               <span className="thq-body-small">
-                {props.feature3Description ?? (
+                {props.moTa3 ?? (
                   <Fragment>
                     <span className="features24-text1">
-                      View doctor&apos;s availability and schedule appointments
-                      easily
+                      Xem lịch hẹn của bác sĩ và đặt lịch dễ dàng
                     </span>
                   </Fragment>
                 )}
@@ -122,36 +120,36 @@ const Features24 = (props) => {
 }
 
 Features24.defaultProps = {
-  feature1ImgAlt: 'Homepage image',
-  feature3Description: undefined,
-  feature3Title: undefined,
-  feature3ImgSrc:
-    'https://images.unsplash.com/photo-1626772959824-8786482c6fcf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3NXw&ixlib=rb-4.0.3&q=80&w=1080',
-  feature1ImgSrc:
-    'https://images.unsplash.com/photo-1617103199187-aff5bebc77ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3Nnw&ixlib=rb-4.0.3&q=80&w=1080',
-  feature2Description: undefined,
-  feature1Title: undefined,
-  feature3ImgAlt: 'Book Appointment image',
-  feature1Description: undefined,
-  feature2ImgSrc:
-    'https://images.unsplash.com/photo-1689289270523-73a662b84f74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3N3w&ixlib=rb-4.0.3&q=80&w=1080',
-  feature2ImgAlt: 'List of Doctors image',
-  feature2Title: undefined,
+  hinhAnh1Alt: 'Hình ảnh bác sĩ',
+  moTa3: undefined,
+  tieuDe3: undefined,
+  hinhAnh3Src:
+    'https://nld.mediacdn.vn/2019/10/7/20160301110559-1570438043637325659617.jpg',
+  hinhAnh1Src:
+    'https://worldcare.vn/assets/images/doctors/doctor-image-remove-background.png',
+  moTa2: undefined,
+  tieuDe1: undefined,
+  hinhAnh3Alt: 'Hình ảnh đợi đến lượt khám bệnh',
+  moTa1: undefined,
+  hinhAnh2Src:
+    'https://bcp.cdnchinhphu.vn/Uploaded/dothanhhoai/2017_12_13/kham%20benh1.jpg',
+  hinhAnh2Alt: 'Hình ảnh lịch trống',
+  tieuDe2: undefined,
 }
 
 Features24.propTypes = {
-  feature1ImgAlt: PropTypes.string,
-  feature3Description: PropTypes.element,
-  feature3Title: PropTypes.element,
-  feature3ImgSrc: PropTypes.string,
-  feature1ImgSrc: PropTypes.string,
-  feature2Description: PropTypes.element,
-  feature1Title: PropTypes.element,
-  feature3ImgAlt: PropTypes.string,
-  feature1Description: PropTypes.element,
-  feature2ImgSrc: PropTypes.string,
-  feature2ImgAlt: PropTypes.string,
-  feature2Title: PropTypes.element,
+  hinhAnh1Alt: PropTypes.string,
+  moTa3: PropTypes.element,
+  tieuDe3: PropTypes.element,
+  hinhAnh3Src: PropTypes.string,
+  hinhAnh1Src: PropTypes.string,
+  moTa2: PropTypes.element,
+  tieuDe1: PropTypes.element,
+  hinhAnh3Alt: PropTypes.string,
+  moTa1: PropTypes.element,
+  hinhAnh2Src: PropTypes.string,
+  hinhAnh2Alt: PropTypes.string,
+  tieuDe2: PropTypes.element,
 }
 
 export default Features24

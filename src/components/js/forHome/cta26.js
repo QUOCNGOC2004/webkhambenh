@@ -32,20 +32,22 @@ const CTA26 = (props) => {
                   )}
                 </p>
               </div>
-              <div className="cta26-actions">
-                <button
-                  type="button"
-                  className="thq-button-filled cta26-button"
-                >
-                  <span>
-                    {props.action1 ?? (
-                      <Fragment>
-                        <span className="cta26-text6">Đặt lịch khám</span>
-                      </Fragment>
-                    )}
-                  </span>
-                </button>
-              </div>
+              <a href={props.lienKetDatLich}>
+                <div className="cta26-actions">
+                  <button
+                    type="button"
+                    className="thq-button-filled cta26-button"
+                  >
+                    <span>
+                      {props.action1 ?? (
+                        <Fragment>
+                          <span className="cta26-text6">Đặt lịch khám</span>
+                        </Fragment>
+                      )}
+                    </span>
+                  </button>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -58,12 +60,14 @@ CTA26.defaultProps = {
   heading1: undefined,
   content1: undefined,
   action1: undefined,
+  lienKetDatLich: '/dat-lich',
 }
 
 CTA26.propTypes = {
   heading1: PropTypes.element,
   content1: PropTypes.element,
   action1: PropTypes.element,
+  lienKetDatLich: PropTypes.string,
 }
 
 export default CTA26
