@@ -350,34 +350,34 @@ const Home = (props) => {
         }
       ></Testimonial17>
       <Contact10
-        content1={
+        noiDung1={
           <Fragment>
             <span className="home-text206">
               Liên hệ với chúng tôi để được tư vấn và hỗ trợ tốt nhất.
             </span>
           </Fragment>
         }
-        location1Description={
+        moTaTruSoChinh={
           <Fragment>
             <span className="home-text207">123 Đường ABC, Quận XYZ, TP. Hồ Chí Minh</span>
           </Fragment>
         }
-        heading1={
+        tieuDe1={
           <Fragment>
             <span className="home-text208">Liên hệ</span>
           </Fragment>
         }
-        location2Description={
+        moTaChiNhanh={
           <Fragment>
             <span className="home-text209">456 Đường DEF, Quận UVW, TP. Hà Nội</span>
           </Fragment>
         }
-        location1={
+        truSoChinh={
           <Fragment>
             <span className="home-text210">Trụ sở chính</span>
           </Fragment>
         }
-        location2={
+        chiNhanh={
           <Fragment>
             <span className="home-text211">Chi nhánh</span>
           </Fragment>
