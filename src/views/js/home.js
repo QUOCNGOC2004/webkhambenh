@@ -359,7 +359,7 @@ const Home = (props) => {
         }
         moTaTruSoChinh={
           <Fragment>
-            <span className="home-text207">123 Đường ABC, Quận XYZ, TP. Hồ Chí Minh</span>
+            <span className="home-text207">P. Trịnh Văn Bô, Xuân Phương, Nam Từ Liêm, Hà Nội</span>
           </Fragment>
         }
         tieuDe1={
@@ -369,7 +369,7 @@ const Home = (props) => {
         }
         moTaChiNhanh={
           <Fragment>
-            <span className="home-text209">456 Đường DEF, Quận UVW, TP. Hà Nội</span>
+            <span className="home-text209">P. Nguyễn Trác, Yên Nghĩa, Hà Đông, Hà Nội</span>
           </Fragment>
         }
         truSoChinh={

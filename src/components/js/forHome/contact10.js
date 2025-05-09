@@ -1,23 +1,8 @@
-import React, { Fragment, useState } from 'react'
-
+import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
-
 import '../../css/forHome/contact10.css'
 
 const Contact10 = (props) => {
-  const [showMap, setShowMap] = useState(false)
-  const [selectedLocation, setSelectedLocation] = useState('')
-
-  const handleShowMap = (location) => {
-    setSelectedLocation(location)
-    setShowMap(true)
-  }
-
-  const handleCloseMap = () => {
-    setShowMap(false)
-    setSelectedLocation('')
-  }
-
   // Encode địa chỉ để sử dụng trong URL Google Maps
   const getGoogleMapsUrl = (address) => {
     return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`
@@ -70,14 +55,8 @@ const Contact10 = (props) => {
               )}
             </p>
             <div className="contact10-container3">
-              <button 
-                onClick={() => handleShowMap(props.moTaTruSoChinh?.props?.children?.[0]?.props?.children ?? '123 Đường Chính, Thành Phố, Quốc Gia')}
-                className="thq-button-flat thq-body-small"
-              >
-                Xem bản đồ
-              </button>
               <a
-                href={getGoogleMapsUrl(props.moTaTruSoChinh?.props?.children?.[0]?.props?.children ?? '123 Đường Chính, Thành Phố, Quốc Gia')}
+                href={getGoogleMapsUrl(props.moTaTruSoChinh?.props?.children?.[0]?.props?.children ?? 'Bệnh viện Đại Học Phenikaa')}
                 target="_blank"
                 rel="noreferrer noopener"
                 className="thq-button-flat thq-body-small"
@@ -109,14 +88,8 @@ const Contact10 = (props) => {
               )}
             </p>
             <div className="contact10-container5">
-              <button 
-                onClick={() => handleShowMap(props.moTaChiNhanh?.props?.children?.[0]?.props?.children ?? '456 Đại Lộ Công Viên, Thành Phố, Quốc Gia')}
-                className="thq-button-flat thq-body-small"
-              >
-                Xem bản đồ
-              </button>
               <a
-                href={getGoogleMapsUrl(props.moTaChiNhanh?.props?.children?.[0]?.props?.children ?? '456 Đại Lộ Công Viên, Thành Phố, Quốc Gia')}
+                href={getGoogleMapsUrl(props.moTaChiNhanh?.props?.children?.[0]?.props?.children ?? 'Đại học Phenikaa')}
                 target="_blank"
                 rel="noreferrer noopener"
                 className="thq-button-flat thq-body-small"
@@ -127,24 +100,6 @@ const Contact10 = (props) => {
           </div>
         </div>
       </div>
-
-      {/* Modal hiển thị bản đồ */}
-      {showMap && (
-        <div className="map-modal">
-          <div className="map-modal-content">
-            <button className="close-button" onClick={handleCloseMap}>×</button>
-            <iframe
-              title="Location Map"
-              width="100%"
-              height="450"
-              style={{ border: 0 }}
-              loading="lazy"
-              allowFullScreen
-              src={`https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=${encodeURIComponent(selectedLocation)}`}
-            ></iframe>
-          </div>
-        </div>
-      )}
     </div>
   )
 }
@@ -152,9 +107,9 @@ const Contact10 = (props) => {
 Contact10.defaultProps = {
   noiDung1: undefined,
   anhChiNhanhSrc:
-    'https://images.unsplash.com/photo-1547315458-492b3a5eebc0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3NXw&ixlib=rb-4.0.3&q=80&w=1080',
+    'https://lh3.googleusercontent.com/gps-cs-s/AC9h4npK7Je1tEbooa3tEGt0S5OoQC71ZhjfJRBvnfqcVCm2hWUAwqutag0-euSeVmBVKVkTn2EbzHsl9tS74lDyo4Su9nHnBmgekSJiDNJ_FnMKqEn9pClu0mGpEXRt7v_ow8VkufL_=w408-h306-k-no',
   anhTruSoChinhSrc:
-    'https://images.unsplash.com/photo-1629638412004-704cd3b53774?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3NXw&ixlib=rb-4.0.3&q=80&w=1080',
+    'https://phenikaamec.com/_next/image?url=https%3A%2F%2Fcdn.phenikaamec.com%2Fphenikaa-mec%2Fgioi-thieu%2F10-2-2024%2F741ab769-024d-4998-89ba-51e77e8e143c-a%C2%BA%C2%A2nh-gia%C2%BB%C2%9Bi-thia%C2%BB%C2%87u-chung-(1).webp&w=1200&q=75',
   moTaTruSoChinh: undefined,
   anhChiNhanh: 'Ảnh Chi Nhánh',
   tieuDe1: undefined,
