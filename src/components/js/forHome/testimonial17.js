@@ -10,20 +10,19 @@ const Testimonial17 = (props) => {
       <div className="testimonial17-max-width thq-section-max-width">
         <div className="testimonial17-container10">
           <h2 className="thq-heading-2">
-            {props.heading1 ?? (
+            {props.tieuDe ?? (
               <Fragment>
                 <span className="testimonial17-text35">
-                  What Our Patients Say
+                  Phản hồi từ bệnh nhân
                 </span>
               </Fragment>
             )}
           </h2>
           <span className="testimonial17-text11 thq-body-small">
-            {props.content1 ?? (
+            {props.noiDung ?? (
               <Fragment>
                 <span className="testimonial17-text32">
-                  Read what our patients have to say about their experience with
-                  our healthcare services.
+                  Đọc những chia sẻ từ bệnh nhân về trải nghiệm của họ với dịch vụ y tế của chúng tôi.
                 </span>
               </Fragment>
             )}
@@ -38,23 +37,23 @@ const Testimonial17 = (props) => {
               >
                 <div className="testimonial17-container12">
                   <img
-                    alt={props.author1Alt}
-                    src={props.author1Src}
+                    alt={props.hinhAnh1Alt}
+                    src={props.hinhAnh1Src}
                     className="testimonial17-image1"
                   />
                   <div className="testimonial17-container13">
                     <strong className="thq-body-large">
-                      {props.author1Name ?? (
+                      {props.tenNguoi1 ?? (
                         <Fragment>
-                          <span className="testimonial17-text26">John Doe</span>
+                          <span className="testimonial17-text26">Nguyễn Văn A</span>
                         </Fragment>
                       )}
                     </strong>
                     <span className="thq-body-small">
-                      {props.author1Position ?? (
+                      {props.ngheNghiep1 ?? (
                         <Fragment>
                           <span className="testimonial17-text25">
-                            Software Engineer
+                            Kỹ sư phần mềm
                           </span>
                         </Fragment>
                       )}
@@ -62,11 +61,10 @@ const Testimonial17 = (props) => {
                   </div>
                 </div>
                 <span className="testimonial17-text14 thq-body-small">
-                  {props.review1 ?? (
+                  {props.danhGia1 ?? (
                     <Fragment>
                       <span className="testimonial17-text34">
-                        I had a great experience booking an appointment through
-                        this website. The process was seamless and efficient.
+                        Tôi đã có trải nghiệm tuyệt vời khi đặt lịch khám qua website này. Quy trình đơn giản và hiệu quả.
                       </span>
                     </Fragment>
                   )}
@@ -82,36 +80,34 @@ const Testimonial17 = (props) => {
               >
                 <div className="testimonial17-container14">
                   <img
-                    alt={props.author2Alt}
-                    src={props.author2Src}
+                    alt={props.hinhAnh2Alt}
+                    src={props.hinhAnh2Src}
                     className="testimonial17-image2"
                   />
                   <div className="testimonial17-container15">
                     <strong className="thq-body-large">
-                      {props.author2Name ?? (
+                      {props.tenNguoi2 ?? (
                         <Fragment>
                           <span className="testimonial17-text29">
-                            Jane Smith
+                            Lê Thị B
                           </span>
                         </Fragment>
                       )}
                     </strong>
                     <span className="thq-body-small">
-                      {props.author2Position ?? (
+                      {props.ngheNghiep2 ?? (
                         <Fragment>
-                          <span className="testimonial17-text24">Teacher</span>
+                          <span className="testimonial17-text24">Giáo viên</span>
                         </Fragment>
                       )}
                     </span>
                   </div>
                 </div>
                 <span className="testimonial17-text17 thq-body-small">
-                  {props.review2 ?? (
+                  {props.danhGia2 ?? (
                     <Fragment>
                       <span className="testimonial17-text28">
-                        The ability to filter doctors based on their specialties
-                        made it easy for me to find the right healthcare
-                        provider for my needs.
+                        Khả năng lọc bác sĩ theo chuyên khoa giúp tôi dễ dàng tìm được bác sĩ phù hợp với nhu cầu của mình.
                       </span>
                     </Fragment>
                   )}
@@ -127,25 +123,25 @@ const Testimonial17 = (props) => {
               >
                 <div className="testimonial17-container16">
                   <img
-                    alt={props.author3Alt}
-                    src={props.author3Src}
+                    alt={props.hinhAnh3Alt}
+                    src={props.hinhAnh3Src}
                     className="testimonial17-image3"
                   />
                   <div className="testimonial17-container17">
                     <strong className="thq-body-large">
-                      {props.author3Name ?? (
+                      {props.tenNguoi3 ?? (
                         <Fragment>
                           <span className="testimonial17-text27">
-                            David Johnson
+                            Trần Văn C
                           </span>
                         </Fragment>
                       )}
                     </strong>
                     <span className="thq-body-small">
-                      {props.author3Position ?? (
+                      {props.ngheNghiep3 ?? (
                         <Fragment>
                           <span className="testimonial17-text33">
-                            Marketing Manager
+                            Quản lý Marketing
                           </span>
                         </Fragment>
                       )}
@@ -153,12 +149,10 @@ const Testimonial17 = (props) => {
                   </div>
                 </div>
                 <span className="testimonial17-text20 thq-body-small">
-                  {props.review3 ?? (
+                  {props.danhGia3 ?? (
                     <Fragment>
                       <span className="testimonial17-text36">
-                        I highly recommend this platform for anyone looking to
-                        schedule medical appointments online. It&apos;s
-                        user-friendly and convenient.
+                        Tôi rất khuyến nghị nền tảng này cho bất kỳ ai muốn đặt lịch khám bệnh trực tuyến. Nó thân thiện và tiện lợi.
                       </span>
                     </Fragment>
                   )}
@@ -174,36 +168,34 @@ const Testimonial17 = (props) => {
               >
                 <div className="testimonial17-container18">
                   <img
-                    alt={props.author4Alt}
-                    src={props.author4Src}
+                    alt={props.hinhAnh4Alt}
+                    src={props.hinhAnh4Src}
                     className="testimonial17-image4"
                   />
                   <div className="testimonial17-container19">
                     <strong className="thq-body-large">
-                      {props.author4Name ?? (
+                      {props.tenNguoi4 ?? (
                         <Fragment>
                           <span className="testimonial17-text31">
-                            Emily Brown
+                            Phạm Thị D
                           </span>
                         </Fragment>
                       )}
                     </strong>
                     <span className="thq-body-small">
-                      {props.author4Position ?? (
+                      {props.ngheNghiep4 ?? (
                         <Fragment>
-                          <span className="testimonial17-text30">Nurse</span>
+                          <span className="testimonial17-text30">Y tá</span>
                         </Fragment>
                       )}
                     </span>
                   </div>
                 </div>
                 <span className="testimonial17-text23 thq-body-small">
-                  {props.review4 ?? (
+                  {props.danhGia4 ?? (
                     <Fragment>
                       <span className="testimonial17-text37">
-                        As a healthcare professional myself, I appreciate the
-                        efficiency and accuracy of the booking system on this
-                        website.
+                        Là một chuyên gia y tế, tôi đánh giá cao hiệu quả và độ chính xác của hệ thống đặt lịch trên website này.
                       </span>
                     </Fragment>
                   )}
@@ -218,57 +210,57 @@ const Testimonial17 = (props) => {
 }
 
 Testimonial17.defaultProps = {
-  author2Position: undefined,
-  author1Position: undefined,
-  author3Alt: 'David Johnson Image Alt Text',
-  author1Name: undefined,
-  author1Src:
-    'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3NXw&ixlib=rb-4.0.3&q=80&w=1080',
-  author3Name: undefined,
-  review2: undefined,
-  author2Name: undefined,
-  author4Position: undefined,
-  author4Name: undefined,
-  author4Src:
-    'https://images.unsplash.com/photo-1485546246426-74dc88dec4d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3NXw&ixlib=rb-4.0.3&q=80&w=1080',
-  author1Alt: 'John Doe Image Alt Text',
-  author2Src:
-    'https://images.unsplash.com/photo-1631383591182-aa24205c089a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3NXw&ixlib=rb-4.0.3&q=80&w=1080',
-  author3Src:
-    'https://images.unsplash.com/photo-1561406636-b80293969660?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NjM3OTY3Nnw&ixlib=rb-4.0.3&q=80&w=1080',
-  author2Alt: 'Jane Smith Image Alt Text',
-  author4Alt: 'Emily Brown Image Alt Text',
-  content1: undefined,
-  author3Position: undefined,
-  review1: undefined,
-  heading1: undefined,
-  review3: undefined,
-  review4: undefined,
+  ngheNghiep2: undefined,
+  ngheNghiep1: undefined,
+  hinhAnh3Alt: 'Hình ảnh Trần Văn C',
+  tenNguoi1: undefined,
+  hinhAnh1Src:
+    'https://cellphones.com.vn/sforum/wp-content/uploads/2023/10/avatar-trang-2.jpg',
+  tenNguoi3: undefined,
+  danhGia2: undefined,
+  tenNguoi2: undefined,
+  ngheNghiep4: undefined,
+  tenNguoi4: undefined,
+  hinhAnh4Src:
+    'https://img.lovepik.com/element/40121/0265.png_860.png',
+  hinhAnh1Alt: 'Hình ảnh Nguyễn Văn A',
+  hinhAnh2Src:
+    'https://cdn.kona-blue.com/upload/kona-blue_com/post/images/2024/09/19/465/avatar-trang-7.jpg',
+  hinhAnh3Src:
+    'https://phanmemmkt.vn/wp-content/uploads/2024/09/Hinh-anh-dai-dien-mac-dinh-Facebook.jpg',
+  hinhAnh2Alt: 'Hình ảnh Lê Thị B',
+  hinhAnh4Alt: 'Hình ảnh Phạm Thị D',
+  noiDung: undefined,
+  ngheNghiep3: undefined,
+  danhGia1: undefined,
+  tieuDe: undefined,
+  danhGia3: undefined,
+  danhGia4: undefined,
 }
 
 Testimonial17.propTypes = {
-  author2Position: PropTypes.element,
-  author1Position: PropTypes.element,
-  author3Alt: PropTypes.string,
-  author1Name: PropTypes.element,
-  author1Src: PropTypes.string,
-  author3Name: PropTypes.element,
-  review2: PropTypes.element,
-  author2Name: PropTypes.element,
-  author4Position: PropTypes.element,
-  author4Name: PropTypes.element,
-  author4Src: PropTypes.string,
-  author1Alt: PropTypes.string,
-  author2Src: PropTypes.string,
-  author3Src: PropTypes.string,
-  author2Alt: PropTypes.string,
-  author4Alt: PropTypes.string,
-  content1: PropTypes.element,
-  author3Position: PropTypes.element,
-  review1: PropTypes.element,
-  heading1: PropTypes.element,
-  review3: PropTypes.element,
-  review4: PropTypes.element,
+  ngheNghiep2: PropTypes.element,
+  ngheNghiep1: PropTypes.element,
+  hinhAnh3Alt: PropTypes.string,
+  tenNguoi1: PropTypes.element,
+  hinhAnh1Src: PropTypes.string,
+  tenNguoi3: PropTypes.element,
+  danhGia2: PropTypes.element,
+  tenNguoi2: PropTypes.element,
+  ngheNghiep4: PropTypes.element,
+  tenNguoi4: PropTypes.element,
+  hinhAnh4Src: PropTypes.string,
+  hinhAnh1Alt: PropTypes.string,
+  hinhAnh2Src: PropTypes.string,
+  hinhAnh3Src: PropTypes.string,
+  hinhAnh2Alt: PropTypes.string,
+  hinhAnh4Alt: PropTypes.string,
+  noiDung: PropTypes.element,
+  ngheNghiep3: PropTypes.element,
+  danhGia1: PropTypes.element,
+  tieuDe: PropTypes.element,
+  danhGia3: PropTypes.element,
+  danhGia4: PropTypes.element,
 }
 
 export default Testimonial17

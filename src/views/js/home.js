@@ -268,80 +268,80 @@ const Home = (props) => {
         }
       ></Steps2>
       <Testimonial17
-        author2Position={
+        ngheNghiep2={
           <Fragment>
             <span className="home-text192">Giáo viên</span>
           </Fragment>
         }
-        author1Position={
+        ngheNghiep1={
           <Fragment>
             <span className="home-text193">Kỹ sư phần mềm</span>
           </Fragment>
         }
-        author1Name={
+        tenNguoi1={
           <Fragment>
             <span className="home-text194">Nguyễn Văn A</span>
           </Fragment>
         }
-        author3Name={
+        tenNguoi3={
           <Fragment>
             <span className="home-text195">Trần Văn C</span>
           </Fragment>
         }
-        review2={
+        danhGia2={
           <Fragment>
             <span className="home-text196">
               Khả năng lọc bác sĩ theo chuyên khoa giúp tôi dễ dàng tìm được bác sĩ phù hợp với nhu cầu của mình.
             </span>
           </Fragment>
         }
-        author2Name={
+        tenNguoi2={
           <Fragment>
             <span className="home-text197">Lê Thị B</span>
           </Fragment>
         }
-        author4Position={
+        ngheNghiep4={
           <Fragment>
             <span className="home-text198">Y tá</span>
           </Fragment>
         }
-        author4Name={
+        tenNguoi4={
           <Fragment>
             <span className="home-text199">Phạm Thị D</span>
           </Fragment>
         }
-        content1={
+        noiDung={
           <Fragment>
             <span className="home-text200">
               Đọc những chia sẻ từ bệnh nhân về trải nghiệm của họ với dịch vụ y tế của chúng tôi.
             </span>
           </Fragment>
         }
-        author3Position={
+        ngheNghiep3={
           <Fragment>
             <span className="home-text201">Quản lý Marketing</span>
           </Fragment>
         }
-        review1={
+        danhGia1={
           <Fragment>
             <span className="home-text202">
               Tôi đã có trải nghiệm tuyệt vời khi đặt lịch khám qua website này. Quy trình đơn giản và hiệu quả.
             </span>
           </Fragment>
         }
-        heading1={
+        tieuDe={
           <Fragment>
             <span className="home-text203">Phản hồi từ bệnh nhân</span>
           </Fragment>
         }
-        review3={
+        danhGia3={
           <Fragment>
             <span className="home-text204">
               Tôi rất khuyến nghị nền tảng này cho bất kỳ ai muốn đặt lịch khám bệnh trực tuyến. Nó thân thiện và tiện lợi.
             </span>
           </Fragment>
         }
-        review4={
+        danhGia4={
           <Fragment>
             <span className="home-text205">
               Là một chuyên gia y tế, tôi đánh giá cao hiệu quả và độ chính xác của hệ thống đặt lịch trên website này.
