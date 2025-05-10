@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
-import '../../css/forHome/contact10.css'
+import '../../css/forHome/lienHe.css'
 
-const Contact10 = (props) => {
+const LienHe  = (props) => {
   // Encode địa chỉ để sử dụng trong URL Google Maps
   const getGoogleMapsUrl = (address) => {
     return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`
@@ -104,7 +104,7 @@ const Contact10 = (props) => {
   )
 }
 
-Contact10.defaultProps = {
+LienHe.defaultProps = {
   noiDung1: undefined,
   anhChiNhanhSrc:
     'https://lh3.googleusercontent.com/gps-cs-s/AC9h4npK7Je1tEbooa3tEGt0S5OoQC71ZhjfJRBvnfqcVCm2hWUAwqutag0-euSeVmBVKVkTn2EbzHsl9tS74lDyo4Su9nHnBmgekSJiDNJ_FnMKqEn9pClu0mGpEXRt7v_ow8VkufL_=w408-h306-k-no',
@@ -119,7 +119,7 @@ Contact10.defaultProps = {
   chiNhanh: undefined,
 }
 
-Contact10.propTypes = {
+LienHe.propTypes = {
   noiDung1: PropTypes.element,
   anhChiNhanhSrc: PropTypes.string,
   anhTruSoChinhSrc: PropTypes.string,
@@ -132,4 +132,4 @@ Contact10.propTypes = {
   chiNhanh: PropTypes.element,
 }
 
-export default Contact10
+export default LienHe

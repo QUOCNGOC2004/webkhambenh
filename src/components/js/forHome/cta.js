@@ -2,9 +2,9 @@ import React, { Fragment } from 'react'
 
 import PropTypes from 'prop-types'
 
-import '../../css/forHome/cta26.css'
+import '../../css/forHome/cta.css'
 
-const CTA26 = (props) => {
+const CTA = (props) => {
   return (
     <div className="thq-section-padding">
       <div className="thq-section-max-width">
@@ -56,18 +56,18 @@ const CTA26 = (props) => {
   )
 }
 
-CTA26.defaultProps = {
+CTA.defaultProps = {
   heading1: undefined,
   content1: undefined,
   action1: undefined,
   lienKetDatLich: '/dat-lich',
 }
 
-CTA26.propTypes = {
+CTA.propTypes = {
   heading1: PropTypes.element,
   content1: PropTypes.element,
   action1: PropTypes.element,
   lienKetDatLich: PropTypes.string,
 }
 
-export default CTA26
+export default CTA

@@ -2,9 +2,9 @@ import React, { Fragment } from 'react'
 
 import PropTypes from 'prop-types'
 
-import '../../css/forHome/testimonial17.css'
+import '../../css/forHome/danhGia.css'
 
-const Testimonial17 = (props) => {
+const DanhGia = (props) => {
   return (
     <div className="thq-section-padding">
       <div className="testimonial17-max-width thq-section-max-width">
@@ -209,7 +209,7 @@ const Testimonial17 = (props) => {
   )
 }
 
-Testimonial17.defaultProps = {
+DanhGia.defaultProps = {
   ngheNghiep2: undefined,
   ngheNghiep1: undefined,
   hinhAnh3Alt: 'Hình ảnh Trần Văn C',
@@ -238,7 +238,7 @@ Testimonial17.defaultProps = {
   danhGia4: undefined,
 }
 
-Testimonial17.propTypes = {
+DanhGia.propTypes = {
   ngheNghiep2: PropTypes.element,
   ngheNghiep1: PropTypes.element,
   hinhAnh3Alt: PropTypes.string,
@@ -263,4 +263,4 @@ Testimonial17.propTypes = {
   danhGia4: PropTypes.element,
 }
 
-export default Testimonial17
+export default DanhGia

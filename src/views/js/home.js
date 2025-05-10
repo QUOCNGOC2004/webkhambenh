@@ -3,14 +3,14 @@ import React, { Fragment } from 'react'
 import { Helmet } from 'react-helmet'
 
 import Navbar8 from '../../components/js/forHome/navbar8'
-import Hero17 from '../../components/js/forHome/hero17'
+import ListAnh from '../../components/js/forHome/listAnh'
 import Features24 from '../../components/js/forHome/features24'
-import CTA26 from '../../components/js/forHome/cta26'
+import CTA from '../../components/js/forHome/cta'
 import Features25 from '../../components/js/forHome/features25'
 import Steps2 from '../../components/js/forHome/steps2'
-import Testimonial17 from '../../components/js/forHome/testimonial17'
-import Contact10 from '../../components/js/forHome/contact10'
-import Footer4 from '../../components/js/forHome/footer4'
+import DanhGia from '../../components/js/forHome/danhGia'
+import LienHe from '../../components/js/forHome/lienHe'
+import ChanTrang from '../../components/js/forHome/chanTrang'
 import '../../views/css/home.css'
 
 const Home = (props) => {
@@ -92,7 +92,7 @@ const Home = (props) => {
           </Fragment>
         }
       ></Navbar8>
-      <Hero17
+      <ListAnh
         action2={
           <Fragment>
             <span className="home-text114">Tìm bác sĩ</span>
@@ -117,7 +117,7 @@ const Home = (props) => {
             </span>
           </Fragment>
         }
-      ></Hero17>
+      ></ListAnh>
       <Features24
         moTa3={
           <Fragment>
@@ -156,7 +156,7 @@ const Home = (props) => {
           </Fragment>
         }
       ></Features24>
-      <CTA26
+      <CTA
         heading1={
           <Fragment>
             <span className="home-text124">Đặt lịch khám ngay hôm nay</span>
@@ -175,7 +175,7 @@ const Home = (props) => {
             <span className="home-text126">Đặt lịch khám</span>
           </Fragment>
         }
-      ></CTA26>
+      ></CTA>
       <Features25
         moTa3={
           <Fragment>
@@ -267,7 +267,7 @@ const Home = (props) => {
           </Fragment>
         }
       ></Steps2>
-      <Testimonial17
+      <DanhGia
         ngheNghiep2={
           <Fragment>
             <span className="home-text192">Giáo viên</span>
@@ -348,8 +348,8 @@ const Home = (props) => {
             </span>
           </Fragment>
         }
-      ></Testimonial17>
-      <Contact10
+      ></DanhGia>
+      <LienHe
         noiDung1={
           <Fragment>
             <span className="home-text206">
@@ -382,8 +382,8 @@ const Home = (props) => {
             <span className="home-text211">Chi nhánh</span>
           </Fragment>
         }
-      ></Contact10>
-      <Footer4
+      ></LienHe>
+      <ChanTrang
         link5={
           <Fragment>
             <span className="home-text212">Liên hệ</span>
@@ -424,7 +424,7 @@ const Home = (props) => {
             <span className="home-text219">Chính sách bảo mật</span>
           </Fragment>
         }
-      ></Footer4>
+      ></ChanTrang>
     </div>
   )
 }

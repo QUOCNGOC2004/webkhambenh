@@ -3,9 +3,9 @@ import React, { Fragment } from 'react'
 import Script from 'dangerous-html/react'
 import PropTypes from 'prop-types'
 
-import '../../css/forHome/hero17.css'
+import '../../css/forHome/listAnh.css'
 
-const Hero17 = (props) => {
+const ListAnh = (props) => {
   return (
     <div className="hero17-header78">
       <div className="hero17-column thq-section-padding thq-section-max-width">
@@ -216,7 +216,7 @@ const Hero17 = (props) => {
   )
 }
 
-Hero17.defaultProps = {
+ListAnh.defaultProps = {
   image3Src:
     'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSBXhp_AiWPXZnUMRNWO-Js-zUxYY3o0C5ow&s',
   image8Alt: 'Hero Image',
@@ -259,7 +259,7 @@ Hero17.defaultProps = {
     'https://nld.mediacdn.vn/291774122806476800/2025/4/16/anh-chup-man-hinh-2025-04-16-luc-172821-1744799608713885340391.png',
 }
 
-Hero17.propTypes = {
+ListAnh.propTypes = {
   image3Src: PropTypes.string,
   image8Alt: PropTypes.string,
   image2Src: PropTypes.string,
@@ -290,4 +290,4 @@ Hero17.propTypes = {
   image1Src: PropTypes.string,
 }
 
-export default Hero17
+export default ListAnh

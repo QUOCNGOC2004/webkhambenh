@@ -2,9 +2,9 @@ import React, { Fragment } from 'react'
 
 import PropTypes from 'prop-types'
 
-import '../../css/forHome/footer4.css'
+import '../../css/forHome/chanTrang.css'
 
-const Footer4 = (props) => {
+const ChanTrang = (props) => {
   return (
     <footer className="footer4-footer7 thq-section-padding">
       <div className="footer4-max-width thq-section-max-width">
@@ -92,7 +92,7 @@ const Footer4 = (props) => {
   )
 }
 
-Footer4.defaultProps = {
+ChanTrang.defaultProps = {
   link5: undefined,
   link3: undefined,
   link1: undefined,
@@ -105,7 +105,7 @@ Footer4.defaultProps = {
   privacyLink: undefined,
 }
 
-Footer4.propTypes = {
+ChanTrang.propTypes = {
   link5: PropTypes.element,
   link3: PropTypes.element,
   link1: PropTypes.element,
@@ -118,4 +118,4 @@ Footer4.propTypes = {
   privacyLink: PropTypes.element,
 }
 
-export default Footer4
+export default ChanTrang
