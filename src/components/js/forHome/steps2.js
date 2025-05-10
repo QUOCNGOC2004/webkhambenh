@@ -11,34 +11,31 @@ const Steps2 = (props) => {
         <div className="steps2-container2 thq-grid-2">
           <div className="steps2-section-header">
             <h2 className="thq-heading-2">
-              Discover the Power of Our Products
+              Dễ dàng quản lý lịch hẹn cá nhân
             </h2>
             <p className="thq-body-large">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros elementum tristique. Duis cursus,
-              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
-              libero vitae erat.
+              Theo dõi và quản lý lịch hẹn khám bệnh của bạn một cách thuận tiện. Xem lịch sử khám bệnh, nhận thông báo nhắc lịch, và dễ dàng hủy hoặc thay đổi lịch hẹn khi cần thiết.
             </p>
             <div className="steps2-actions">
               <button className="thq-button-animated thq-button-filled steps2-button">
-                <span className="thq-body-small">Main action</span>
+                <span className="thq-body-small">Quản lý lịch hẹn</span>
               </button>
             </div>
           </div>
           <div className="steps2-container3">
             <div className="steps2-container4 thq-card">
               <h2 className="thq-heading-2">
-                {props.step1Title ?? (
+                {props.tieuDe1 ?? (
                   <Fragment>
-                    <span className="steps2-text29">Homepage</span>
+                    <span className="steps2-text29">Trang chủ</span>
                   </Fragment>
                 )}
               </h2>
               <span className="steps2-text14 thq-body-small">
-                {props.step1Description ?? (
+                {props.moTa1 ?? (
                   <Fragment>
                     <span className="steps2-text25">
-                      Introduce the website and its purpose to users.
+                      Giới thiệu website và mục đích sử dụng cho người dùng.
                     </span>
                   </Fragment>
                 )}
@@ -47,18 +44,17 @@ const Steps2 = (props) => {
             </div>
             <div className="steps2-container5 thq-card">
               <h2 className="thq-heading-2">
-                {props.step2Title ?? (
+                {props.tieuDe2 ?? (
                   <Fragment>
-                    <span className="steps2-text27">Login/Register Page</span>
+                    <span className="steps2-text27">Trang đăng nhập/Đăng ký</span>
                   </Fragment>
                 )}
               </h2>
               <span className="steps2-text17 thq-body-small">
-                {props.step2Description ?? (
+                {props.moTa2 ?? (
                   <Fragment>
                     <span className="steps2-text28">
-                      Allow users to create an account or log in to access more
-                      features.
+                      Cho phép người dùng tạo tài khoản hoặc đăng nhập để truy cập các tính năng bổ sung.
                     </span>
                   </Fragment>
                 )}
@@ -67,18 +63,17 @@ const Steps2 = (props) => {
             </div>
             <div className="steps2-container6 thq-card">
               <h2 className="thq-heading-2">
-                {props.step3Title ?? (
+                {props.tieuDe3 ?? (
                   <Fragment>
-                    <span className="steps2-text30">List of Doctors</span>
+                    <span className="steps2-text30">Danh sách bác sĩ</span>
                   </Fragment>
                 )}
               </h2>
               <span className="steps2-text20 thq-body-small">
-                {props.step3Description ?? (
+                {props.moTa3 ?? (
                   <Fragment>
                     <span className="steps2-text26">
-                      Display a list of doctors with filtering options by
-                      specialty and availability.
+                      Hiển thị danh sách bác sĩ với tùy chọn lọc theo chuyên khoa và lịch trống.
                     </span>
                   </Fragment>
                 )}
@@ -87,18 +82,17 @@ const Steps2 = (props) => {
             </div>
             <div className="steps2-container7 thq-card">
               <h2 className="thq-heading-2">
-                {props.step4Title ?? (
+                {props.tieuDe4 ?? (
                   <Fragment>
-                    <span className="steps2-text32">Doctor Details Page</span>
+                    <span className="steps2-text32">Trang chi tiết bác sĩ</span>
                   </Fragment>
                 )}
               </h2>
               <span className="steps2-text23 thq-body-small">
-                {props.step4Description ?? (
+                {props.moTa4 ?? (
                   <Fragment>
                     <span className="steps2-text31">
-                      Provide detailed information about a specific doctor
-                      including their profile, schedule, and reviews.
+                      Cung cấp thông tin chi tiết về bác sĩ bao gồm hồ sơ, lịch làm việc và đánh giá.
                     </span>
                   </Fragment>
                 )}
@@ -113,25 +107,25 @@ const Steps2 = (props) => {
 }
 
 Steps2.defaultProps = {
-  step1Description: undefined,
-  step3Description: undefined,
-  step2Title: undefined,
-  step2Description: undefined,
-  step1Title: undefined,
-  step3Title: undefined,
-  step4Description: undefined,
-  step4Title: undefined,
+  moTa1: undefined,
+  moTa3: undefined,
+  tieuDe2: undefined,
+  moTa2: undefined,
+  tieuDe1: undefined,
+  tieuDe3: undefined,
+  moTa4: undefined,
+  tieuDe4: undefined,
 }
 
 Steps2.propTypes = {
-  step1Description: PropTypes.element,
-  step3Description: PropTypes.element,
-  step2Title: PropTypes.element,
-  step2Description: PropTypes.element,
-  step1Title: PropTypes.element,
-  step3Title: PropTypes.element,
-  step4Description: PropTypes.element,
-  step4Title: PropTypes.element,
+  moTa1: PropTypes.element,
+  moTa3: PropTypes.element,
+  tieuDe2: PropTypes.element,
+  moTa2: PropTypes.element,
+  tieuDe1: PropTypes.element,
+  tieuDe3: PropTypes.element,
+  moTa4: PropTypes.element,
+  tieuDe4: PropTypes.element,
 }
 
 export default Steps2

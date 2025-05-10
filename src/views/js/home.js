@@ -218,52 +218,52 @@ const Home = (props) => {
       ></Features25>
       
       <Steps2
-        step1Description={
+        moTa1={
           <Fragment>
             <span className="home-text184">
-              Giới thiệu website và mục đích sử dụng cho người dùng.
+            Trở thành Hệ thống y tế hàn lâm đẳng cấp quốc tế, hướng tới các giá trị Chân – Thiện – Mỹ bằng nghiên cứu đột phá, chất lượng điều trị xuất sắc, dịch vụ chăm sóc hoàn hảo và giáo dục nâng tầm tri thức.
             </span>
           </Fragment>
         }
-        step3Description={
+        moTa3={
           <Fragment>
             <span className="home-text185">
-              Hiển thị danh sách bác sĩ với tùy chọn lọc theo chuyên khoa và lịch trống.
+              Chính trực,xuất sắc,tận tâm cống hiến,sáng tạo.
             </span>
           </Fragment>
         }
-        step2Title={
+        tieuDe2={
           <Fragment>
-            <span className="home-text186">Trang đăng nhập/Đăng ký</span>
+            <span className="home-text186">Sứ mệnh</span>
           </Fragment>
         }
-        step2Description={
+        moTa2={
           <Fragment>
             <span className="home-text187">
-              Cho phép người dùng tạo tài khoản hoặc đăng nhập để truy cập các tính năng bổ sung.
+            Vì một cộng đồng khỏe mạnh, nhân văn và thông thái hơn bằng tài năng, y đức, lòng trắc ẩn và tinh thần sẵn sàng cống hiến, phụng sự.
             </span>
           </Fragment>
         }
-        step1Title={
+        tieuDe1={
           <Fragment>
-            <span className="home-text188">Trang chủ</span>
+            <span className="home-text188">Tầm nhìn</span>
           </Fragment>
         }
-        step3Title={
+        tieuDe3={
           <Fragment>
-            <span className="home-text189">Danh sách bác sĩ</span>
+            <span className="home-text189">Giá trị cốt lõi</span>
           </Fragment>
         }
-        step4Description={
+        moTa4={
           <Fragment>
             <span className="home-text190">
-              Cung cấp thông tin chi tiết về bác sĩ bao gồm hồ sơ, lịch làm việc và đánh giá.
+              Hãy trải nghiệm và cảm nhận sự hài lòng từ dịch vụ của chúng tôi.
             </span>
           </Fragment>
         }
-        step4Title={
+        tieuDe4={
           <Fragment>
-            <span className="home-text191">Trang chi tiết bác sĩ</span>
+            <span className="home-text191">Trải nghiệm và cảm nhận</span>
           </Fragment>
         }
       ></Steps2>
